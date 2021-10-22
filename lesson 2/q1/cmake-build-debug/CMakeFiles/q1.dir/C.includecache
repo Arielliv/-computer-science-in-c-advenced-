@@ -9,4 +9,8 @@
 /Users/ariell/Education/computer-science-in-c-advanced/lesson 2/q1/main.c
 stdio.h
 -
+stdlib.h
+-
+string.h
+-
 
