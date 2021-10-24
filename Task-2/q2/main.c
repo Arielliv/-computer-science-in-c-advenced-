@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 #define INIT_SIZE 1
 
@@ -28,7 +29,7 @@ void checkMemoryAllocation(void *ptr);
 
 void swapMonoms(Monom *value1, Monom *value2);
 
-void printMonom(Monom c);
+void printMonom(Monom c, bool shouldAddSign);
 
 void cleanPolynom(Monom *polynom, int *size);
 
@@ -173,17 +174,64 @@ void swapMonoms(Monom *value1, Monom *value2) {
 
 void printPolynom(Monom *polynom, int size) {
     int i;
-    for (i = 0; i < size; i++) {
-        printMonom(polynom[i]);
+    bool shouldPrintSign = true;
+    for (i = 0; i <= size - 1; i++) {
+        if (polynom[i + 1].coefficient < 0 || i + 1 == size) {
+            shouldPrintSign = false;
+        }
+        printMonom(polynom[i], shouldPrintSign);
     }
     printf("\n");
 }
 
-void printMonom(Monom c) {
+void printMonom(Monom c, bool shouldAddSign) {
     if (c.power == 0) {
-        printf("%dX ", c.coefficient);
+        if (c.coefficient != 1) {
+            if (shouldAddSign) {
+                printf(" %d +", c.coefficient);
+            } else {
+                printf(" %d ", c.coefficient);
+            }
+        }
+    } else if (c.power == 1 || c.power == -1) {
+        if (c.coefficient == 1) {
+            if (shouldAddSign) {
+                printf(" X +");
+            } else {
+                printf(" X ");
+            }
+        } else if (c.coefficient == -1) {
+            if (shouldAddSign) {
+                printf(" -X +");
+            } else {
+                printf(" -X ");
+            }
+        } else {
+            if (shouldAddSign) {
+                printf(" %dX +", c.coefficient);
+            } else {
+                printf(" %dX ", c.coefficient);
+            }
+        }
+    } else if (c.coefficient == 1) {
+        if (shouldAddSign) {
+            printf(" X^%d +", c.power);
+        } else {
+            printf(" X^%d ", c.power);
+        }
+    } else if (c.coefficient == -1) {
+        if (shouldAddSign) {
+            printf(" -X^%d +", c.power);
+        } else {
+            printf(" -X^%d ", c.power);
+        }
     } else {
-        printf("%dX^%d ", c.coefficient, c.power);
+        if (shouldAddSign) {
+            printf(" %dX^%d +", c.coefficient, c.power);
+        } else {
+            printf(" %dX^%d ", c.coefficient, c.power);
+        }
+
     }
 }
 
@@ -202,12 +250,24 @@ Monom *createPolynom(int *size, int *polynomNumbers, int polynomNumbersSize) {
 }
 
 void cleanPolynom(Monom *polynom, int *size) {
-    int i;
+    int i, k;
     int plSize = *size;
     for (i = 0; i < plSize; i++) {
-        for (int k = i + 1; k < plSize; k++) {
+        if (polynom[i].coefficient == 0) {
+            swapMonoms(&polynom[i], &polynom[plSize - 1]);
+            plSize--;
+        }
+        for (k = i + 1; k < plSize; k++) {
             if (polynom[i].power == polynom[k].power) {
                 polynom[i].coefficient = polynom[i].coefficient + polynom[k].coefficient;
+                swapMonoms(&polynom[k], &polynom[plSize - 1]);
+                plSize--;
+                if (polynom[i].coefficient == 0) {
+                    swapMonoms(&polynom[i], &polynom[plSize - 1]);
+                    plSize--;
+                }
+            }
+            if (polynom[k].coefficient == 0) {
                 swapMonoms(&polynom[k], &polynom[plSize - 1]);
                 plSize--;
             }
