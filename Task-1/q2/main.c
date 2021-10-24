@@ -1,3 +1,4 @@
+// 315363366
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <memory.h>
@@ -30,8 +31,12 @@ void printRoman(int num);
 
 // print decimal as binary number
 void printBinary(int num);
+
 // powersTen
 int powersTen(int num, int power);
+
+// check memory allocation
+void checkMemoryAllocation(void *ptr);
 
 int main() {
     char format[100];
@@ -101,8 +106,11 @@ void printFormattedIntegers(char *format, char *numbers) {
 int *convertStrToNumArray(char *strNums) {
     char *token;
     int *numbers;
-    numbers = (int *) malloc(100 * sizeof(int));
     int i = 0;
+
+    numbers = (int *) malloc(100 * sizeof(int));
+    checkMemoryAllocation(numbers);
+
     token = strtok(strNums, " ");
     while (token != NULL) {
         sscanf(token, "%d", &numbers[i]);
@@ -164,4 +172,11 @@ void printBinary(int num) {
         count++;
     }
     printf("%d", binNum);
+}
+
+void checkMemoryAllocation(void *ptr) {
+    if (ptr == NULL) {
+        printf("Memory Allocation Failed...\n");
+        exit(1);
+    }
 }
