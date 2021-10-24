@@ -1,8 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="q2" targetName="q2" />
+    </generated>
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="decc1ea6-c8f9-4c27-95a3-93ca425261e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../test-p/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-p/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-p/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-p/.idea/test-p.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-p/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-p/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-p/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-1/q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-1/q1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q1-a/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../q1-a/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q1-b/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../q1-b/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q2.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 2/q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 2/q1/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1zxynSz0zu00uJstNIL8usEfhKz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="q2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="q2" TARGET_NAME="q2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="q2" RUN_TARGET_NAME="q2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="decc1ea6-c8f9-4c27-95a3-93ca425261e4" name="Default Changelist" comment="" />
+      <created>1635104199497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635104199497</updated>
+      <workItem from="1635104200974" duration="10417000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1871" height="326" key="GridCell.Tab.0.bottom" timestamp="1635114646320">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1871" height="326" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635114646320" />
+    <state width="1871" height="326" key="GridCell.Tab.0.center" timestamp="1635114646318">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1871" height="326" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635114646318" />
+    <state width="1871" height="326" key="GridCell.Tab.0.left" timestamp="1635114646317">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1871" height="326" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635114646317" />
+    <state width="1871" height="326" key="GridCell.Tab.0.right" timestamp="1635114646319">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1871" height="326" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635114646319" />
+    <state width="1871" height="400" key="GridCell.Tab.1.bottom" timestamp="1635113909744">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1871" height="400" key="GridCell.Tab.1.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635113909744" />
+    <state width="1871" height="400" key="GridCell.Tab.1.center" timestamp="1635113909743">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1871" height="400" key="GridCell.Tab.1.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635113909743" />
+    <state width="1871" height="400" key="GridCell.Tab.1.left" timestamp="1635113909743">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1871" height="400" key="GridCell.Tab.1.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635113909743" />
+    <state width="1871" height="400" key="GridCell.Tab.1.right" timestamp="1635113909743">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1871" height="400" key="GridCell.Tab.1.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635113909743" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c</url>
+          <line>80</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c</url>
+          <line>87</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
