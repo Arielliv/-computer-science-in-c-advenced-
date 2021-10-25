@@ -29,14 +29,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc8ead60-9fca-4e79-9e17-7bf09225cc01" name="Default Changelist" comment="">
+    <list default="true" id="bc8ead60-9fca-4e79-9e17-7bf09225cc01" name="Default Changelist" comment="end of lesson">
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-1/q1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-1/q1/cmake-build-debug/q1" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-1/q1/cmake-build-debug/q1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-1/q1/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-1/q1/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-2/q1-a/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q1-a/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-2/q1-b/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q1-b/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-2/q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-2/q2/cmake-build-debug/CMakeFiles/q2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q2/cmake-build-debug/CMakeFiles/q2.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-2/q2/cmake-build-debug/q2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q2/cmake-build-debug/q2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-2/q2/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q2/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q1.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q1.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/q1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/q1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -93,8 +95,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634894629338</updated>
-      <workItem from="1634894630672" duration="4587000" />
+      <workItem from="1634894630672" duration="8821000" />
     </task>
+    <task id="LOCAL-00001" summary="end of lesson">
+      <created>1634899269609</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634899269609</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +120,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="end of lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="end of lesson" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1638" height="342" key="GridCell.Tab.0.bottom" timestamp="1634899205729">
@@ -144,5 +158,9 @@
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state width="1638" height="342" key="GridCell.Tab.1.right/0.25.1680.1025@0.25.1680.1025" timestamp="1634899213012" />
+    <state x="440" y="274" key="Vcs.Push.Dialog.v2" timestamp="1634899272518">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="440" y="274" key="Vcs.Push.Dialog.v2/0.25.1680.1025@0.25.1680.1025" timestamp="1634899272518" />
   </component>
 </project>

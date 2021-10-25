@@ -1,4 +1,5 @@
-//#define _CRT_SECURE_NO_WARNINGS
+// 315363366
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -17,6 +18,9 @@ int **pointerSort(int *arr, int size, int ascend_flag);
 
 // print pointers array values
 void printPointers(int **pointers, int size);
+
+// check memory allocation
+void checkMemoryAllocation(void *ptr);
 
 #define SIZE 100
 
@@ -42,6 +46,7 @@ void main() {
 
 int **pointerSort(int *arr, int size, int ascend_flag) {
     int **pointersArray = (int **) malloc(sizeof(int *) * size);
+    checkMemoryAllocation(pointersArray);
     for (int i = 0; i < size; i++) {
         pointersArray[i] = &arr[i];
     }
@@ -75,6 +80,7 @@ void mergeSort(int **array, int size, int ascend_flag) {
 int **mergeArrays(int **array1, int size1, int **array2, int size2, int ascend_flag) {
     int index1, index2, indexResult;
     int **tempArray = (int **) malloc(sizeof(int *) * (size1 + size2));
+    checkMemoryAllocation(tempArray);
     if (tempArray == NULL) {
         printf("error");
     } else {
@@ -135,5 +141,12 @@ void copyArray(int **des, int **src, int size) {
     for (i = 0; i < size; i++) {
         des[i] = src[i];
 
+    }
+}
+
+void checkMemoryAllocation(void *ptr) {
+    if (ptr == NULL) {
+        printf("Memory Allocation Failed...\n");
+        exit(1);
     }
 }
