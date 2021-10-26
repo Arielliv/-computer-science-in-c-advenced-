@@ -101,11 +101,14 @@ Monom *getPolynom(unsigned int *polynomSize) {
     int *intNumbers;
     int size = 0;
     Monom *polynom;
+
     intNumbers = convertStrToNumArray(str, &size);
     polynom = createPolynom(&size, intNumbers, size);
     organizePolynom(polynom, &size);
     sortPolynom(polynom, size);
     *polynomSize = size;
+    free(intNumbers);
+
     return polynom;
 }
 
@@ -123,16 +126,18 @@ void swapMonoms(Monom *value1, Monom *value2) {
 }
 
 Monom *createPolynom(int *size, int *polynomNumbers, int polynomNumbersSize) {
-    int i, y;
+    int i, j;
     Monom *polynom = (Monom *) malloc(sizeof(Monom) * (*size));
-    for (i = 0, y = 0; i < *size - 1; i += 2, y++) {
+    checkMemoryAllocation(polynom);
+
+    for (i = 0, j = 0; i < *size - 1; i += 2, j++) {
         if (polynomNumbers[i] == 0) {
             i += 2;
         }
-        polynom[y].coefficient = polynomNumbers[i];
-        polynom[y].power = polynomNumbers[i + 1];
+        polynom[j].coefficient = polynomNumbers[i];
+        polynom[j].power = polynomNumbers[i + 1];
     }
-    *size = y;
+    *size = j;
     return polynom;
 }
 
@@ -183,6 +188,8 @@ void sortPolynom(Monom *polynom, int size) {
 void printPolyMul(Monom *polynom1, unsigned int polynom1Size, Monom *polynom2, unsigned int polynom2Size) {
     int maxSize = polynom1Size * polynom2Size;
     Monom *newPolynom = (Monom *) malloc(sizeof(Monom) * maxSize);
+    checkMemoryAllocation(newPolynom);
+
     int counter = 0;
     for (int index1 = 0; index1 < polynom1Size; index1++) {
         for (int index2 = 0; index2 < polynom2Size; index2++) {
@@ -201,6 +208,7 @@ void printPolySum(Monom *polynom1, unsigned int polynom1Size, Monom *polynom2, u
     int maxSize = polynom1Size + polynom1Size;
 
     Monom *newPolynom = (Monom *) malloc(sizeof(Monom) * maxSize);
+    checkMemoryAllocation(newPolynom);
 
     for (int index1 = 0; index1 < polynom1Size; index1++) {
         newPolynom[index1].coefficient = polynom1[index1].coefficient;
