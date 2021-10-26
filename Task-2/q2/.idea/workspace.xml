@@ -30,11 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="decc1ea6-c8f9-4c27-95a3-93ca425261e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Task-1/q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-1/q1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../q1-a/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../q1-a/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../q1-b/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../q1-b/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q2.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/q2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/q2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 2/q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 2/q1/.idea/workspace.xml" afterDir="false" />
@@ -81,11 +77,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,7 +86,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635104199497</updated>
-      <workItem from="1635104200974" duration="14603000" />
+      <workItem from="1635104200974" duration="15401000" />
+      <workItem from="1635286353189" duration="180000" />
+      <workItem from="1635286563008" duration="2323000" />
     </task>
     <servers />
   </component>
@@ -112,63 +105,49 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1871" height="326" key="GridCell.Tab.0.bottom" timestamp="1635118884622">
+    <state width="1878" height="327" key="GridCell.Tab.0.bottom" timestamp="1635288457398">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1871" height="326" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635118884622" />
-    <state width="1871" height="326" key="GridCell.Tab.0.center" timestamp="1635118884621">
+    <state width="1878" height="327" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635288457398" />
+    <state width="1878" height="327" key="GridCell.Tab.0.center" timestamp="1635288457396">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1871" height="326" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635118884621" />
-    <state width="1871" height="326" key="GridCell.Tab.0.left" timestamp="1635118884620">
+    <state width="1878" height="327" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635288457396" />
+    <state width="1878" height="327" key="GridCell.Tab.0.left" timestamp="1635288457395">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1871" height="326" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635118884620" />
-    <state width="1871" height="326" key="GridCell.Tab.0.right" timestamp="1635118884621">
+    <state width="1878" height="327" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635288457395" />
+    <state width="1878" height="327" key="GridCell.Tab.0.right" timestamp="1635288457397">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1871" height="326" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635118884621" />
-    <state width="1871" height="400" key="GridCell.Tab.1.bottom" timestamp="1635118561201">
+    <state width="1878" height="327" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635288457397" />
+    <state width="1878" height="401" key="GridCell.Tab.1.bottom" timestamp="1635287881874">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1871" height="400" key="GridCell.Tab.1.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635118561201" />
-    <state width="1871" height="400" key="GridCell.Tab.1.center" timestamp="1635118561200">
+    <state width="1878" height="401" key="GridCell.Tab.1.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635287881874" />
+    <state width="1878" height="401" key="GridCell.Tab.1.center" timestamp="1635287881872">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1871" height="400" key="GridCell.Tab.1.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635118561200" />
-    <state width="1871" height="400" key="GridCell.Tab.1.left" timestamp="1635118561200">
+    <state width="1878" height="401" key="GridCell.Tab.1.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635287881872" />
+    <state width="1878" height="401" key="GridCell.Tab.1.left" timestamp="1635287881872">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1871" height="400" key="GridCell.Tab.1.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635118561200" />
-    <state width="1871" height="400" key="GridCell.Tab.1.right" timestamp="1635118561200">
+    <state width="1878" height="401" key="GridCell.Tab.1.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635287881872" />
+    <state width="1878" height="401" key="GridCell.Tab.1.right" timestamp="1635287881873">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1871" height="400" key="GridCell.Tab.1.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635118561200" />
+    <state width="1878" height="401" key="GridCell.Tab.1.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635287881873" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.c</url>
-          <line>196</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.c</url>
-          <line>260</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.c</url>
-          <line>251</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.c</url>
-          <line>249</line>
-          <option name="timeStamp" value="29" />
+          <line>195</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

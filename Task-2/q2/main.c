@@ -5,21 +5,23 @@
 #include <string.h>
 #include <stdbool.h>
 
-#define INIT_SIZE 1
-
 typedef struct monom {
     int coefficient;
     int power;
 };
 typedef struct monom Monom;
 
+// return new array of monoms from the user input according to polynomSize param
 Monom *getPolynom(unsigned int *polynomSize);
 
+// print multiply of polynoms ( two arrays of monoms)
 void printPolyMul(Monom *polynom1, unsigned int polynom1Size, Monom *polynom2, unsigned int polynom2Size);
 
+// print sum of polynoms ( two arrays of monoms)
 void printPolySum(Monom *polynom1, unsigned int polynom1Size, Monom *polynom2, unsigned int polynom2Size);
 
-char *inputString();
+// get user input for unknow size of string
+char *getStringInput();
 
 // create and return array of numbers from string of numbers
 int *convertStrToNumArray(char *strNums, int *size);
@@ -27,18 +29,28 @@ int *convertStrToNumArray(char *strNums, int *size);
 // check memory allocation
 void checkMemoryAllocation(void *ptr);
 
+// swap two monos in array (polymon)
 void swapMonoms(Monom *value1, Monom *value2);
 
+// multiply two monoms -  return new value
+Monom mulMonoms(Monom monom1, Monom monom2);
+
+// print polymon by the rules
 void printMonom(Monom c, bool shouldAddSign);
 
-void cleanPolynom(Monom *polynom, int *size);
+// organize polymon ( all same power combined )
+void organizePolynom(Monom *polynom, int *size);
 
+// create array of monoms from numbers ( by couples )
 Monom *createPolynom(int *size, int *polynomNumbers, int polynomNumbersSize);
 
+// sort polymon asc
 void sortPolynom(Monom *polynom, int size);
 
+// print polynom by the rules
 void printPolynom(Monom *polynom, int size);
 
+// main function
 void main() {
     Monom *polynom1, *polynom2;             // The input polynoms
     unsigned int polynom1Size, polynom2Size; // The size of each polynom
@@ -61,18 +73,111 @@ void main() {
     free(polynom2);
 }
 
+char *getStringInput() {
+    //The size is extended by the input
+    char *str = NULL;
+    int ch;
+    int size = 0, len = 0;
+
+    while ((ch = getchar()) != EOF && ch != '\n') {
+        if (len + 1 >= size) {
+            size = size * 2 + 1;
+            str = realloc(str, sizeof(char) * size);
+            checkMemoryAllocation(str);
+        }
+        str[len++] = (char) ch;
+    }
+    if (str != NULL) {
+        str[len] = '\0';
+        return str;
+    } else {
+        return NULL;
+    }
+
+}
 
 Monom *getPolynom(unsigned int *polynomSize) {
-    char *str = inputString();
+    char *str = getStringInput();
     int *intNumbers;
     int size = 0;
     Monom *polynom;
     intNumbers = convertStrToNumArray(str, &size);
     polynom = createPolynom(&size, intNumbers, size);
-    cleanPolynom(polynom, &size);
+    organizePolynom(polynom, &size);
     sortPolynom(polynom, size);
     *polynomSize = size;
     return polynom;
+}
+
+void swapMonoms(Monom *value1, Monom *value2) {
+    Monom tmp;
+    tmp.coefficient = value1->coefficient;
+    tmp.power = value1->power;
+
+    value1->coefficient = value2->coefficient;
+    value1->power = value2->power;
+
+    value2->coefficient = tmp.coefficient;
+    value2->power = tmp.power;
+
+}
+
+Monom *createPolynom(int *size, int *polynomNumbers, int polynomNumbersSize) {
+    int i, y;
+    Monom *polynom = (Monom *) malloc(sizeof(Monom) * (*size));
+    for (i = 0, y = 0; i < *size - 1; i += 2, y++) {
+        if (polynomNumbers[i] == 0) {
+            i += 2;
+        }
+        polynom[y].coefficient = polynomNumbers[i];
+        polynom[y].power = polynomNumbers[i + 1];
+    }
+    *size = y;
+    return polynom;
+}
+
+void organizePolynom(Monom *polynom, int *size) {
+    int i, j;
+    int polynomSize = *size;
+    for (i = 0; i < polynomSize; i++) {
+        // check for monom with coefficient 0
+        if (polynom[i].coefficient == 0) {
+            swapMonoms(&polynom[i], &polynom[polynomSize - 1]);
+            polynomSize--;
+        }
+        for (j = i + 1; j < polynomSize; j++) {
+            if (polynom[i].power == polynom[j].power) {
+                polynom[i].coefficient = polynom[i].coefficient + polynom[j].coefficient;
+                swapMonoms(&polynom[j], &polynom[polynomSize - 1]);
+                // in order to check with the swaped item
+                j--;
+                polynomSize--;
+            }
+
+            //check again after sum of two fields for monom with coefficient 0
+            if (polynom[j].coefficient == 0) {
+                swapMonoms(&polynom[j], &polynom[polynomSize - 1]);
+                j--;
+                polynomSize--;
+            }
+        }
+    }
+
+    // realloc size to real size after finished
+    polynom = realloc(polynom, sizeof(Monom) * polynomSize);
+    *size = polynomSize;
+}
+
+void sortPolynom(Monom *polynom, int size) {
+    int i, j;
+    for (i = 0; i < size - 1; i++) {
+        for (j = 0; j < size - i - 1; j++) {
+            if (polynom[j].power < polynom[j + 1].power) {
+                swapMonoms(&polynom[j], &polynom[j + 1]);
+            }
+
+        }
+    }
 }
 
 void printPolyMul(Monom *polynom1, unsigned int polynom1Size, Monom *polynom2, unsigned int polynom2Size) {
@@ -81,12 +186,12 @@ void printPolyMul(Monom *polynom1, unsigned int polynom1Size, Monom *polynom2, u
     int counter = 0;
     for (int index1 = 0; index1 < polynom1Size; index1++) {
         for (int index2 = 0; index2 < polynom2Size; index2++) {
-            newPolynom[counter].coefficient = polynom1[index1].coefficient * polynom2[index2].coefficient;
-            newPolynom[counter].power = polynom1[index1].power + polynom2[index2].power;
+            newPolynom[counter] = mulMonoms(polynom1[index1], polynom2[index2]);
             counter++;
         }
     }
-    cleanPolynom(newPolynom, &maxSize);
+
+    organizePolynom(newPolynom, &maxSize);
     sortPolynom(newPolynom, maxSize);
     printPolynom(newPolynom, maxSize);
     free(newPolynom);
@@ -105,83 +210,18 @@ void printPolySum(Monom *polynom1, unsigned int polynom1Size, Monom *polynom2, u
         newPolynom[polynom1Size + index2].coefficient = polynom2[index2].coefficient;
         newPolynom[polynom1Size + index2].power = polynom2[index2].power;
     }
-    cleanPolynom(newPolynom, &maxSize);
+
+    organizePolynom(newPolynom, &maxSize);
     sortPolynom(newPolynom, maxSize);
     printPolynom(newPolynom, maxSize);
     free(newPolynom);
 }
 
-char *inputString() {
-    //The size is extended by the input
-    char *str = NULL;
-    int ch;
-    size_t size = 0, len = 0;
-
-    while ((ch = getchar()) != EOF && ch != '\n') {
-        if (len + 1 >= size) {
-            size = size * 2 + 1;
-            str = realloc(str, sizeof(char) * size);
-            checkMemoryAllocation(str);
-        }
-        str[len++] = ch;
-    }
-    if (str != NULL) {
-        str[len] = '\0';
-        return str;
-    } else {
-        return NULL;
-    }
-
-}
-
-void checkMemoryAllocation(void *ptr) {
-    if (ptr == NULL) {
-        printf("Memory Allocation Failed...\n");
-        exit(1);
-    }
-}
-
-int *convertStrToNumArray(char *strNums, int *size) {
-    char *token;
-    int *numbers;
-    int i = 0;
-
-    numbers = (int *) malloc((strlen(strNums) / 2) * sizeof(int));
-    checkMemoryAllocation(numbers);
-
-    token = strtok(strNums, " ");
-    while (token != NULL) {
-        sscanf(token, "%d", &numbers[i]);
-        token = strtok(NULL, " ");
-        i++;
-    }
-    *size = i;
-    return numbers;
-}
-
-void swapMonoms(Monom *value1, Monom *value2) {
-    Monom tmp;
-    tmp.coefficient = value1->coefficient;
-    tmp.power = value1->power;
-
-    value1->coefficient = value2->coefficient;
-    value1->power = value2->power;
-
-    value2->coefficient = tmp.coefficient;
-    value2->power = tmp.power;
-
-}
-
-void printPolynom(Monom *polynom, int size) {
-    int i;
-    bool shouldPrintSign = true;
-    for (i = 0; i <= size - 1; i++) {
-        if (polynom[i + 1].coefficient < 0 || i + 1 == size) {
-            shouldPrintSign = false;
-        }
-        printMonom(polynom[i], shouldPrintSign);
-    }
-    printf("\n");
+Monom mulMonoms(Monom monom1, Monom monom2) {
+    Monom newMonom;
+    newMonom.coefficient = monom1.coefficient * monom2.coefficient;
+    newMonom.power = monom1.power + monom2.power;
+    return newMonom;
 }
 
 void printMonom(Monom c, bool shouldAddSign) {
@@ -235,57 +275,39 @@ void printMonom(Monom c, bool shouldAddSign) {
     }
 }
 
-Monom *createPolynom(int *size, int *polynomNumbers, int polynomNumbersSize) {
-    int i, y;
-    Monom *polynom = (Monom *) malloc(sizeof(Monom) * (*size));
-    for (i = 0, y = 0; i < *size - 1; i += 2, y++) {
-        if (polynomNumbers[i] == 0) {
-            i += 2;
+void printPolynom(Monom *polynom, int size) {
+    int i;
+    bool shouldPrintSign = true;
+    for (i = 0; i <= size - 1; i++) {
+        if (polynom[i + 1].coefficient < 0 || i + 1 == size) {
+            shouldPrintSign = false;
         }
-        polynom[y].coefficient = polynomNumbers[i];
-        polynom[y].power = polynomNumbers[i + 1];
+        printMonom(polynom[i], shouldPrintSign);
     }
-    *size = y;
-    return polynom;
+    printf("\n");
 }
 
-void cleanPolynom(Monom *polynom, int *size) {
-    int i, k;
-    int plSize = *size;
-    for (i = 0; i < plSize; i++) {
-        if (polynom[i].coefficient == 0) {
-            swapMonoms(&polynom[i], &polynom[plSize - 1]);
-            plSize--;
-        }
-        for (k = i + 1; k < plSize; k++) {
-            if (polynom[i].power == polynom[k].power) {
-                polynom[i].coefficient = polynom[i].coefficient + polynom[k].coefficient;
-                swapMonoms(&polynom[k], &polynom[plSize - 1]);
-                plSize--;
-                if (polynom[i].coefficient == 0) {
-                    swapMonoms(&polynom[i], &polynom[plSize - 1]);
-                    plSize--;
-                }
-            }
-            if (polynom[k].coefficient == 0) {
-                swapMonoms(&polynom[k], &polynom[plSize - 1]);
-                plSize--;
-            }
-        }
+void checkMemoryAllocation(void *ptr) {
+    if (ptr == NULL) {
+        printf("Memory Allocation Failed...\n");
+        exit(1);
     }
-
-    polynom = realloc(polynom, sizeof(Monom) * plSize);
-    *size = plSize;
 }
 
-void sortPolynom(Monom *polynom, int size) {
-    int i, j;
-    for (i = 0; i < size - 1; i++) {
-        for (j = 0; j < size - i - 1; j++) {
-            if (polynom[j].power < polynom[j + 1].power) {
-                swapMonoms(&polynom[j], &polynom[j + 1]);
-            }
+int *convertStrToNumArray(char *strNums, int *size) {
+    char *token;
+    int *numbers;
+    int i = 0;
 
-        }
+    numbers = (int *) malloc((strlen(strNums) / 2) * sizeof(int));
+    checkMemoryAllocation(numbers);
+
+    token = strtok(strNums, " ");
+    while (token != NULL) {
+        sscanf(token, "%d", &numbers[i]);
+        token = strtok(NULL, " ");
+        i++;
     }
+    *size = i;
+    return numbers;
 }

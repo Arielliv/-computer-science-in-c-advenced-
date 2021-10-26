@@ -30,13 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc8ead60-9fca-4e79-9e17-7bf09225cc01" name="Default Changelist" comment="end of lesson">
-      <change beforePath="$PROJECT_DIR$/../../Task-1/q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-1/q1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-2/q1-a/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q1-a/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-2/q1-b/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q1-b/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-2/q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-2/q2/cmake-build-debug/CMakeFiles/q2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q2/cmake-build-debug/CMakeFiles/q2.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-2/q2/cmake-build-debug/q2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q2/cmake-build-debug/q2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-2/q2/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q2/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,11 +65,6 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="q1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="q1" TARGET_NAME="q1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="q1" RUN_TARGET_NAME="q1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -96,6 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634894629338</updated>
       <workItem from="1634894630672" duration="8821000" />
+      <workItem from="1635286356321" duration="202000" />
     </task>
     <task id="LOCAL-00001" summary="end of lesson">
       <created>1634899269609</created>
@@ -120,43 +110,52 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="end of lesson" />
     <option name="LAST_COMMIT_MESSAGE" value="end of lesson" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="342" key="GridCell.Tab.0.bottom" timestamp="1634899205729">
+    <state width="1638" height="342" key="GridCell.Tab.0.bottom" timestamp="1635143242779">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state width="1638" height="342" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@0.25.1680.1025" timestamp="1635143242779" />
     <state width="1638" height="342" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1634899205729" />
-    <state width="1638" height="342" key="GridCell.Tab.0.center" timestamp="1634899205728">
+    <state width="1638" height="342" key="GridCell.Tab.0.center" timestamp="1635143242779">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state width="1638" height="342" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@0.25.1680.1025" timestamp="1635143242779" />
     <state width="1638" height="342" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1634899205728" />
-    <state width="1638" height="342" key="GridCell.Tab.0.left" timestamp="1634899205727">
+    <state width="1638" height="342" key="GridCell.Tab.0.left" timestamp="1635143242779">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state width="1638" height="342" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@0.25.1680.1025" timestamp="1635143242779" />
     <state width="1638" height="342" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1634899205727" />
-    <state width="1638" height="342" key="GridCell.Tab.0.right" timestamp="1634899205728">
+    <state width="1638" height="342" key="GridCell.Tab.0.right" timestamp="1635143242779">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state width="1638" height="342" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@0.25.1680.1025" timestamp="1635143242779" />
     <state width="1638" height="342" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1634899205728" />
-    <state width="1638" height="342" key="GridCell.Tab.1.bottom" timestamp="1634899213012">
+    <state width="1638" height="342" key="GridCell.Tab.1.bottom" timestamp="1635143242780">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state width="1638" height="342" key="GridCell.Tab.1.bottom/0.25.1680.1025/1680.-125.1920.1175@0.25.1680.1025" timestamp="1635143242780" />
     <state width="1638" height="342" key="GridCell.Tab.1.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1634899213012" />
-    <state width="1638" height="342" key="GridCell.Tab.1.center" timestamp="1634899213011">
+    <state width="1638" height="342" key="GridCell.Tab.1.center" timestamp="1635143242780">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state width="1638" height="342" key="GridCell.Tab.1.center/0.25.1680.1025/1680.-125.1920.1175@0.25.1680.1025" timestamp="1635143242780" />
     <state width="1638" height="342" key="GridCell.Tab.1.center/0.25.1680.1025@0.25.1680.1025" timestamp="1634899213011" />
-    <state width="1638" height="342" key="GridCell.Tab.1.left" timestamp="1634899213011">
+    <state width="1638" height="342" key="GridCell.Tab.1.left" timestamp="1635143242780">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state width="1638" height="342" key="GridCell.Tab.1.left/0.25.1680.1025/1680.-125.1920.1175@0.25.1680.1025" timestamp="1635143242780" />
     <state width="1638" height="342" key="GridCell.Tab.1.left/0.25.1680.1025@0.25.1680.1025" timestamp="1634899213011" />
-    <state width="1638" height="342" key="GridCell.Tab.1.right" timestamp="1634899213012">
+    <state width="1638" height="342" key="GridCell.Tab.1.right" timestamp="1635143242780">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state width="1638" height="342" key="GridCell.Tab.1.right/0.25.1680.1025/1680.-125.1920.1175@0.25.1680.1025" timestamp="1635143242780" />
     <state width="1638" height="342" key="GridCell.Tab.1.right/0.25.1680.1025@0.25.1680.1025" timestamp="1634899213012" />
     <state x="440" y="274" key="Vcs.Push.Dialog.v2" timestamp="1634899272518">
       <screen x="0" y="25" width="1680" height="1025" />
