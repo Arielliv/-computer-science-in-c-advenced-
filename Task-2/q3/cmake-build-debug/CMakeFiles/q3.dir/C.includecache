@@ -9,4 +9,10 @@
 /Users/ariell/Education/computer-science-in-c-advanced/Task-2/q3/main.c
 stdio.h
 -
+stdlib.h
+-
+stdbool.h
+-
+string.h
+-
 
