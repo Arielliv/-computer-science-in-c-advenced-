@@ -10,7 +10,7 @@ typedef struct monom {
     int power;
 };
 typedef struct monom Monom;
-
+//
 // return new array of monoms from the user input according to polynomSize param
 Monom *getPolynom(unsigned int *polynomSize);
 
@@ -72,28 +72,30 @@ void main() {
     free(polynom1); // releasing all memory allocations
     free(polynom2);
 }
-
 char *getStringInput() {
-    //The size is extended by the input
-    char *str = NULL;
-    int ch;
-    int size = 0, len = 0;
+    char *str;
+    int logSize = 0, phySize = 1;
+    char c;
+    str = (char *) malloc(sizeof(char) * phySize);
+    checkMemoryAllocation(str);
 
-    while ((ch = getchar()) != EOF && ch != '\n') {
-        if (len + 1 >= size) {
-            size = size * 2 + 1;
-            str = realloc(str, sizeof(char) * size);
+    c = getchar();
+    while (c != '\n') {
+        if (logSize == phySize) {
+            phySize *= 2;
+            str = (char *) realloc(str, sizeof(char) * phySize);
             checkMemoryAllocation(str);
         }
-        str[len++] = (char) ch;
+        str[logSize] = c;
+        logSize++;
+        c = getchar();
     }
-    if (str != NULL) {
-        str[len] = '\0';
-        return str;
-    } else {
-        return NULL;
+    if (logSize < phySize) {
+        str = (char *) realloc(str, sizeof(char) * (logSize + 1));
+        checkMemoryAllocation(str);
     }
-
+    str[logSize] = '\0';
+    return str;
 }
 
 Monom *getPolynom(unsigned int *polynomSize) {

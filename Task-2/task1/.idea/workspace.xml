@@ -31,10 +31,9 @@
   <component name="ChangeListManager">
     <list default="true" id="52afc159-18f9-44c1-8254-26aeb1e90100" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../q2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q2/cmake-build-debug/q2" beforeDir="false" afterPath="$PROJECT_DIR$/../q2/cmake-build-debug/q2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../q2/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../q2/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/task1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/task1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635499202234</updated>
-      <workItem from="1635499204016" duration="5066000" />
+      <workItem from="1635499204016" duration="5602000" />
     </task>
     <servers />
   </component>
