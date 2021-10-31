@@ -1,9 +1,14 @@
 //315363366
 //#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <string.h>
+
+typedef struct point {
+    int locationOfStr;
+    int locationOfChar;
+} Point;
 
 char **setPtrToCharsArray(char **str_array);
 
@@ -15,13 +20,21 @@ unsigned int RemoveFromStrArray(char ***str_array, unsigned int str_array_size, 
 
 void freeArray(char **str_array, int str_array_size);
 
-char *removeCharFromStr(char *str, char *c);
+void freePoints(Point *array, int size);
 
 char *getStringInput();
 
 void checkMemoryAllocation(void *ptr);
 
-void removeEmptyArrayCell(char **str_array, unsigned int str_array_size, int indexOfEmptyCell);
+void removeEmptyArrayCellByIndex(char **array, int index, int array_length);
+
+void copyArray(Point *des, Point *src, int size);
+
+Point *mergeArrays(Point *array1, int size1, Point *array2, int size2);
+
+void mergeSort(Point *array, int size);
+
+void removeCharFromArrayOfStrByIndex(char **str_array, int str_array_size, int row, int col);
 
 int main() {
 
@@ -132,9 +145,12 @@ char *getStringInput() {
 }
 
 unsigned int RemoveFromStrArray(char ***str_array, unsigned int str_array_size, char **ptr_to_chars_array) {
+    int pointsLogSize = 0;
+    int pointsPyhSize = 1;
+    Point *points = (Point *) malloc(sizeof(Point *) * pointsPyhSize);
     char **strArray = *str_array;
     int sizeOfCurrentStr;
-    int currentPtr = 0, j, k;
+    int currentPtr = 0, j, k, i;
     int isEmptyCell;
     int counter = 0;
     char *ptrToCharInStr;
@@ -146,58 +162,74 @@ unsigned int RemoveFromStrArray(char ***str_array, unsigned int str_array_size, 
             sizeOfCurrentStr = strlen(ptrCurrentStr);
             for (k = 0; k < sizeOfCurrentStr; k++) {
                 if (&ptrCurrentStr[k] == ptrToCharInStr) {
-                    strArray[j] = removeCharFromStr(strArray[j], ptrToCharInStr);
-                    sizeOfCurrentStr--;
+                    Point *newPoint = (Point *) malloc((sizeof(currentPtr)));
+                    newPoint->locationOfStr = j;
+                    newPoint->locationOfChar = k;
+                    points[pointsLogSize] = *newPoint;
+                    pointsLogSize++;
+                    if (pointsLogSize == pointsPyhSize) {
+                        pointsPyhSize *= 2;
+                        points = (Point *) realloc(points, sizeof(Point *) * pointsPyhSize);
+                        checkMemoryAllocation(points);
+                    }
                 }
             }
         }
         currentPtr++;
     }
+    if (pointsLogSize < pointsPyhSize) {
+        points = (Point *) realloc(points, sizeof(Point *) * pointsLogSize);
+        checkMemoryAllocation(points);
+    }
+    mergeSort(points, pointsLogSize);
+    for (i = 0; i < pointsLogSize; i++) {
+        printf("%d-%d\n", points[i].locationOfStr, points[i].locationOfChar);
+    }
+
+    for (i = 0; i < pointsLogSize; i++) {
+        removeCharFromArrayOfStrByIndex(strArray, (int) str_array_size, points[i].locationOfStr,
+                                        points[i].locationOfChar);
+    }
+    freePoints(points, pointsLogSize);
 
     for (j = 0; j < str_array_size; j++) {
         isEmptyCell = strcmp(strArray[j], "\0");
         if (isEmptyCell == 0) {
-            removeEmptyArrayCell(strArray, str_array_size, j);
+            removeEmptyArrayCellByIndex(strArray, j, (int) str_array_size);
             str_array_size--;
             counter++;
         }
     }
 
-
     *str_array = strArray;
     return counter;
 }
 
-char *removeCharFromStr(char *str, char *c) {
-    int size = strlen(str);
-    if (size == 0) {
-        return "\0";
-    }
-    // size without \0
-    char *newStr = (char *) malloc(sizeof(char) * size);
-    int newIndex = 0;
-    for (int i = 0; i < size; i++) {
-        if (&(str[i]) != c) {
-            newStr[newIndex] = str[i];
-            newIndex++;
+void removeCharFromArrayOfStrByIndex(char **str_array, int str_array_size, int row, int col) {
+    int i, j;
+
+    char *newStr;
+    int newIndex;
+    for (i = 0; i < str_array_size; i++) {
+        int strSize = strlen(str_array[i]);
+        newIndex = 0;
+        newStr = (char *) malloc(sizeof(char) * (strSize));
+        for (j = 0; j < strSize; j++) {
+            if (i != row || j != col) {
+                newStr[newIndex] = str_array[i][j];
+                newIndex++;
+            }
         }
+        newStr[newIndex] = '\0';
+        str_array[i] = newStr;
     }
-    newStr[size] = '\0';
-    return newStr;
 }
 
-void removeEmptyArrayCell(char **str_array, unsigned int str_array_size, int indexOfEmptyCell) {
+void removeEmptyArrayCellByIndex(char **array, int index, int array_length) {
     int i;
-
-    char **newStr_array = (char **) malloc(sizeof(char *) * str_array_size - 1);
-    int newIndex = 0;
-    for (i = 0; i < str_array_size; i++) {
-        if (i != indexOfEmptyCell) {
-            newStr_array[newIndex] = str_array[i];
-            newIndex++;
-        }
+    for (i = index; i < array_length - 1; i++) {
+        array[i] = array[i + 1];
     }
-    str_array = newStr_array;
 }
 
 void printArray(char **str_array, int str_array_size) {
@@ -215,9 +247,83 @@ void freeArray(char **str_array, int str_array_size) {
     free(str_array);
 }
 
+void freePoints(Point *array, int size) {
+    int i;
+    free(array);
+}
+
 void checkMemoryAllocation(void *ptr) {
     if (ptr == NULL) {
         printf("Memory Allocation Failed...\n");
         exit(1);
+    }
+}
+
+void mergeSort(Point *array, int size) {
+    Point *tmpArray = NULL;
+    if (size <= 1) {
+        return;
+    }
+    mergeSort(array, size / 2);
+    mergeSort(array + size / 2, size - size / 2);
+    tmpArray = mergeArrays(array, size / 2, array + size / 2, size - size / 2);
+    if (tmpArray) {
+        copyArray(array, tmpArray, size);
+        free(tmpArray);
+    } else {
+        printf("error");
+    }
+}
+
+Point *mergeArrays(Point *array1, int size1, Point *array2, int size2) {
+    int index1, index2, indexResult;
+    Point *tempArray = (Point *) malloc(sizeof(Point) * (size1 + size2));
+    checkMemoryAllocation(tempArray);
+    if (tempArray == NULL) {
+        printf("error");
+    } else {
+        index1 = index2 = indexResult = 0;
+
+        while ((index1 < size1) && (index2 < size2)) {
+            if ((array1[index1]).locationOfStr > (array2[index2]).locationOfStr) {
+                tempArray[indexResult] = array1[index1];
+                index1++;
+            } else if ((array1[index1]).locationOfStr == (array2[index2]).locationOfStr) {
+                if ((array1[index1]).locationOfChar > (array2[index2]).locationOfChar) {
+                    tempArray[indexResult] = array1[index1];
+                    index1++;
+                } else {
+                    tempArray[indexResult] = array2[index2];
+                    index2++;
+                }
+            } else {
+                tempArray[indexResult] = array2[index2];
+                index2++;
+
+            }
+            indexResult++;
+        }
+
+        while (index2 < size2) {
+            tempArray[indexResult] = array2[index2];
+            index2++;
+            indexResult++;
+        }
+
+        while (index1 < size1) {
+            tempArray[indexResult] = array1[index1];
+            index1++;
+            indexResult++;
+        }
+    }
+
+
+    return tempArray;
+}
+
+void copyArray(Point *des, Point *src, int size) {
+    int i;
+    for (i = 0; i < size; i++) {
+        des[i] = src[i];
     }
 }
