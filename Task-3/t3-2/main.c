@@ -29,9 +29,6 @@ typedef struct list {
     XListNode *tail;
 } List;
 
-unsigned int getPairOccurrences(List coord_list,
-                                int x, int y);
-
 List getCoordList();
 
 void freeList(List *list);
@@ -41,8 +38,6 @@ void freeYList(YList *yList);
 void makeEmptyList(List *lst);
 
 void makeEmptyYList(YList *lst);
-
-void insertDataToStartList(List *lst, int x, int y);
 
 XListNode *createNewXListNode(int x, int y, XListNode *next, XListNode *prev);
 
@@ -64,26 +59,23 @@ XListNode *isExistInList(List *lst, int x);
 
 int countYCoordinateOccurrences(YList *yList, int yCoordinate);
 
-void main() {
+unsigned int getYOccurrences(List coord_list, int y);
+
+void main()
+{
 
     List coordList;
-
-    int x, y;
+    int y;
     unsigned int res;
 
-// The user will enter the number of points followed by the points.
-// The pointes will be entered in a sorted fashion.
-// i.e. first by the x value and then by y.
-// for example (5 points): 5 1 2 1 5 2 7 3 3 3 8
-// are: (1,2),(1,5),(2,7),(3,3),(3,8)
     coordList = getCoordList();
 
-// get the (x,y) to look for
-    scanf("%d%d", &x, &y);
+// get the (*,y) to look for
+    scanf("%d", &y);
 
-    res = getPairOccurrences(coordList, x, y);
+    res = getYOccurrences(coordList, y);
 
-    printf("The point (%d,%d) appears %u times\n", x, y, res);
+    printf("The point (*,%d) appears %u times\n", y, res);
 
     freeList(&coordList);
 }
@@ -218,14 +210,14 @@ int countYCoordinateOccurrences(YList *yList, int yCoordinate) {
     return counter;
 }
 
-
-unsigned int getPairOccurrences(List coord_list, int x, int y) {
-    XListNode *curr = isExistInList(&coord_list, x);
-    if (curr == NULL) {
-        return 0;
-    } else {
-        return countYCoordinateOccurrences(&(curr->son), y);
+unsigned int getYOccurrences(List coord_list, int y){
+    int counter = 0;
+    XListNode *curr = coord_list.head;
+    while (curr != NULL) {
+        counter += countYCoordinateOccurrences(&(curr->son),y);
+        curr = curr->next;
     }
+    return counter;
 }
 
 void freeYList(YList *yList) {
