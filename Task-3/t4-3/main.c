@@ -6,63 +6,114 @@
 #include <string.h>
 #include <stdbool.h>
 
-typedef struct listNode {
-    int *dataPtr;
-    struct listNode *next;
-} ListNode;
+
+typedef struct YlistNode {
+    int yCoordinate;
+    struct YlistNode *next;
+} YListNode;
+
+typedef struct Ylist {
+    YListNode *head;
+    YListNode *tail;
+} YList;
+
+typedef struct XlistNode {
+    int xCoordinate;
+    struct XlistNode *next;
+    struct XlistNode *prev;
+    struct Ylist son;
+} XListNode;
 
 typedef struct list {
-    ListNode *head;
-    ListNode *tail;
+    XListNode *head;
+    XListNode *tail;
 } List;
 
-List merge(List lst1, List lst2);
+List getCoordList();
 
-List mergeHelper(List lst1, List lst2);
+void freeList(List *list);
 
-List getList();
+void freeYList(YList *yList);
 
 void makeEmptyList(List *lst);
 
-void printList(List *lst);
+void makeEmptyYList(YList *lst);
+
+XListNode *createNewXListNode(int x, int y, XListNode *next, XListNode *prev);
+
+void insertDataToEndList(List *lst, int x, int y);
+
+void insertNodeToEndListNode(List *lst, XListNode *newTail);
 
 bool isEmptyList(List *lst);
 
-void freeList(List *lst);
+void insertDataToEndYList(YList *lst, int y);
 
-void insertDataToEndList(List *lst, int data);
+void insertNodeToEndListYNode(YList *lst, YListNode *newTail);
 
-void insertNodeToEndListNode(List *lst, ListNode *newTail);
+YListNode *createNewYListNode(int y, YListNode *next);
 
-ListNode *createNewListNode(int data, ListNode *next);
+bool isEmptyYList(YList *lst);
+
+XListNode *isExistInList(List *lst, int x);
+
+bool isCoordinateExistInList(List *lst, int x, int y);
+
+bool isExistInYList(YList *lst, int y);
+
+int insertCoordinate(List *coord_list, int x, int y);
+
+void printYList(YList *lst, int x);
+
+void printList(List *lst);
 
 void main() {
-    List lst1, lst2, mergedList;
 
-    lst1 = getList();
-    lst2 = getList();
+    List coordList;
 
-    mergedList = merge(lst1, lst2);
+    int x, y;
 
-    printf("Merged list:\n");
-    printList(&mergedList);
+    int res;
 
-    freeList(&mergedList);
+    coordList = getCoordList();
+
+// get the (x,y) to insert
+
+    scanf("%d%d", &x, &y);
+
+
+    res = insertCoordinate(&coordList, x, y);
+
+    if (res == 0)
+
+        printf("The point (%d,%d) didn't appear\n", x, y);
+
+    else
+
+        printf("The point (%d,%d) already appeared\n", x, y);
+
+    printf("Updated list: ");
+
+    printList(&coordList);
+
+    freeList(&coordList);
+
 }
 
-List getList() {
+List getCoordList() {
     List res;
-    int size, num, i;
+    int size, num1, num2, i;
 
     makeEmptyList(&res);
 
     printf("Please enter the number of items to be entered:\n");
     scanf("%d", &size);
 
-    printf("Please enter the numbers:\n");
+    printf("Please enter the numbers  by pers:\n");
     for (i = 0; i < size; i++) {
-        scanf("%d", &num);
-        insertDataToEndList(&res, num);
+        scanf("%d", &num1);
+        scanf("%d", &num2);
+        insertDataToEndList(&res, num1, num2);
     }
 
     return res;
@@ -70,48 +121,59 @@ List getList() {
 }
 
 void makeEmptyList(List *lst) {
-    lst->head = lst->tail = NULL;
+    lst->head = NULL;
+    lst->tail = NULL;
 }
 
-
-void printList(List *lst) {
-    ListNode *curr;
-
-    curr = lst->head;
-
-    while (curr != NULL) {
-        printf("%d ", *(curr->dataPtr));
-        curr = curr->next;
-    }
-
-    printf("\n");
+void makeEmptyYList(YList *lst) {
+    lst->head = NULL;
+    lst->tail = NULL;
 }
 
-bool isEmptyList(List *lst) {
-    return (lst->head == NULL);
-}
+void insertDataToEndList(List *lst, int x, int y) {
+    XListNode *head = isExistInList(lst, x);
 
-void freeList(List *lst) {
-    ListNode *curr = lst->head, *saver;
+    if (head == NULL) {
+        head = createNewXListNode(x, y, NULL, NULL);
+        insertNodeToEndListNode(lst, head);
+    } else {
 
-    while (curr != NULL) {
-        saver = curr->next;
-        free(curr->dataPtr);
-        free(curr);
-        curr = saver;
+        insertDataToEndYList(&(head->son), y);
     }
 }
 
-
-void insertDataToEndList(List *lst, int data) {
-    ListNode *newTail;
-
-    newTail = createNewListNode(data, NULL);
-    insertNodeToEndListNode(lst, newTail);
-}
-
-void insertNodeToEndListNode(List *lst, ListNode *newTail) {
+void insertNodeToEndListNode(List *lst, XListNode *newTail) {
     if (isEmptyList(lst)) {
+        lst->head = lst->tail = newTail;
+    } else {
+        newTail->prev = lst->tail;
+        lst->tail->next = newTail;
+        lst->tail = newTail;
+    }
+}
+
+XListNode *createNewXListNode(int x, int y, XListNode *next, XListNode *prev) {
+    XListNode *res;
+    res = (XListNode *) malloc(sizeof(XListNode));
+    res->xCoordinate = x;
+    res->next = next;
+    res->prev = prev;
+    makeEmptyYList(&(res->son));
+    insertDataToEndYList(&(res->son), y);
+    return res;
+}
+
+
+void insertDataToEndYList(YList *lst, int y) {
+    YListNode *newTail;
+
+    newTail = createNewYListNode(y, NULL);
+    insertNodeToEndListYNode(lst, newTail);
+}
+
+void insertNodeToEndListYNode(YList *lst, YListNode *newTail) {
+
+    if (isEmptyYList(lst)) {
         lst->head = lst->tail = newTail;
     } else {
         lst->tail->next = newTail;
@@ -119,53 +181,128 @@ void insertNodeToEndListNode(List *lst, ListNode *newTail) {
     }
 }
 
-ListNode *createNewListNode(int data, ListNode *next) {
-    ListNode *res;
+YListNode *createNewYListNode(int y, YListNode *next) {
+    YListNode *res;
 
-    res = (ListNode *) malloc(sizeof(ListNode));
-    res->dataPtr = (int *) malloc(sizeof(int));
-    *res->dataPtr = data;
+    res = (YListNode *) malloc(sizeof(YListNode));
+    res->yCoordinate = y;
     res->next = next;
 
     return res;
 }
 
-List merge(List lst1, List lst2) {
-    if (isEmptyList(&lst1) && !isEmptyList(&lst2)) {
-        return lst2;
-    } else if (isEmptyList(&lst2) && !isEmptyList(&lst1)) {
-        return lst1;
+bool isEmptyYList(YList *lst) {
+    if (lst->head == NULL)
+        return true;
+    else
+        return false;
+}
+
+bool isEmptyList(List *lst) {
+    if (lst->head == NULL)
+        return true;
+    else
+        return false;
+}
+
+XListNode *isExistInList(List *lst, int x) {
+    if (isEmptyList(lst)) {
+        return NULL;
+    }
+    XListNode *curr = lst->head;
+    while (curr != NULL) {
+        if (curr->xCoordinate == x) {
+            return curr;
+        }
+        curr = curr->next;
+    }
+    return NULL;
+}
+
+bool isExistInYList(YList *lst, int y) {
+    bool res = false;
+    if (isEmptyYList(lst)) {
+        return false;
+    }
+    YListNode *curr = lst->head;
+    while (curr != NULL) {
+        if (curr->yCoordinate == y) {
+            res = true;
+        }
+        curr = curr->next;
+    }
+    return res;
+}
+
+bool isCoordinateExistInList(List *lst, int x, int y) {
+    bool res = false;
+    if (isEmptyList(lst)) {
+        return false;
+    }
+    XListNode *curr = lst->head;
+    while (curr != NULL) {
+        if (curr->xCoordinate == x) {
+            res = isExistInYList(&(curr->son), y);
+        }
+        curr = curr->next;
+    }
+    return res;
+}
+
+void freeYList(YList *yList) {
+    YListNode *curr = yList->head, *saver;
+    while (curr != NULL) {
+        saver = curr->next;
+        free(curr);
+        curr = saver;
+    }
+}
+
+void freeList(List *list) {
+    XListNode *curr = list->head, *saver;
+    while (curr != NULL) {
+        saver = curr->next;
+        freeYList(&(curr->son));
+        free(curr);
+        curr = saver;
+    }
+}
+
+
+int insertCoordinate(List *coord_list, int x, int y) {
+    bool isCoordinateExist = isCoordinateExistInList(coord_list, x, y);
+    insertDataToEndList(coord_list, x, y);
+    if (isCoordinateExist) {
+        return 1;
     } else {
-        if (*(lst1.head->dataPtr) >= *(lst2.head->dataPtr)) {
-            return mergeHelper(lst1, lst2);
-        } else {
-            return mergeHelper(lst2, lst1);
-        }
+        return 0;
     }
 }
 
-List mergeHelper(List lst1, List lst2) {
-    ListNode *curr1 = lst1.head;
-    ListNode *curr2 = lst2.head;
-    ListNode *saver1 = NULL;
-    ListNode *saver2 = NULL;
-    while (curr1 != NULL && curr2 != NULL) {
-        if (*(curr1->dataPtr) >= *(curr2->dataPtr)) {
-            saver1 = curr1;
-            curr1 = curr1->next;
-        } else {
-            saver2 = curr2->next;
-            curr2->next = curr1;
-            saver1->next = curr2;
-            saver1 = saver1->next;
-            curr2 = saver2;
-        }
-    }
+void printYList(YList *lst, int x) {
+    YListNode *curr;
 
-    if (curr2 != NULL) {
-        saver1->next = curr2;
-    }
+    curr = lst->head;
 
-    return lst1;
+    while (curr != NULL) {
+
+        printf("(%d %d), ", x, curr->yCoordinate);
+
+        curr = curr->next;
+    }
 }
 
+void printList(List *lst) {
+    XListNode *curr;
+
+    curr = lst->head;
+
+    while (curr != NULL) {
+
+        printYList(&(curr->son), curr->xCoordinate);
+
+        curr = curr->next;
+    }
+
+    printf("\n");
+}
