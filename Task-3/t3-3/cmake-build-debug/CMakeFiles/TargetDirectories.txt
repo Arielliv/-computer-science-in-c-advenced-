@@ -1,0 +1,3 @@
+/Users/ariell/Education/computer-science-in-c-advanced/Task-3/t3-3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ariell/Education/computer-science-in-c-advanced/Task-3/t3-3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ariell/Education/computer-science-in-c-advanced/Task-3/t3-3/cmake-build-debug/CMakeFiles/t3_3.dir
