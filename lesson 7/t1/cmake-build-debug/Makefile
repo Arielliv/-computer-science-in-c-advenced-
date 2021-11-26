@@ -143,32 +143,59 @@ t1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/t1.dir/build.make CMakeFiles/t1.dir/build
 .PHONY : t1/fast
 
-main.o: main.c.o
+Source_Files/main.o: Source_Files/main.c.o
 
-.PHONY : main.o
+.PHONY : Source_Files/main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t1.dir/build.make CMakeFiles/t1.dir/main.c.o
-.PHONY : main.c.o
+Source_Files/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t1.dir/build.make CMakeFiles/t1.dir/Source_Files/main.c.o
+.PHONY : Source_Files/main.c.o
 
-main.i: main.c.i
+Source_Files/main.i: Source_Files/main.c.i
 
-.PHONY : main.i
+.PHONY : Source_Files/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t1.dir/build.make CMakeFiles/t1.dir/main.c.i
-.PHONY : main.c.i
+Source_Files/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t1.dir/build.make CMakeFiles/t1.dir/Source_Files/main.c.i
+.PHONY : Source_Files/main.c.i
 
-main.s: main.c.s
+Source_Files/main.s: Source_Files/main.c.s
 
-.PHONY : main.s
+.PHONY : Source_Files/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/t1.dir/build.make CMakeFiles/t1.dir/main.c.s
-.PHONY : main.c.s
+Source_Files/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t1.dir/build.make CMakeFiles/t1.dir/Source_Files/main.c.s
+.PHONY : Source_Files/main.c.s
+
+Source_Files/trees.o: Source_Files/trees.c.o
+
+.PHONY : Source_Files/trees.o
+
+# target to build an object file
+Source_Files/trees.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t1.dir/build.make CMakeFiles/t1.dir/Source_Files/trees.c.o
+.PHONY : Source_Files/trees.c.o
+
+Source_Files/trees.i: Source_Files/trees.c.i
+
+.PHONY : Source_Files/trees.i
+
+# target to preprocess a source file
+Source_Files/trees.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t1.dir/build.make CMakeFiles/t1.dir/Source_Files/trees.c.i
+.PHONY : Source_Files/trees.c.i
+
+Source_Files/trees.s: Source_Files/trees.c.s
+
+.PHONY : Source_Files/trees.s
+
+# target to generate assembly for a file
+Source_Files/trees.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t1.dir/build.make CMakeFiles/t1.dir/Source_Files/trees.c.s
+.PHONY : Source_Files/trees.c.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... t1"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Source_Files/main.o"
+	@echo "... Source_Files/main.i"
+	@echo "... Source_Files/main.s"
+	@echo "... Source_Files/trees.o"
+	@echo "... Source_Files/trees.i"
+	@echo "... Source_Files/trees.s"
 .PHONY : help
 
 

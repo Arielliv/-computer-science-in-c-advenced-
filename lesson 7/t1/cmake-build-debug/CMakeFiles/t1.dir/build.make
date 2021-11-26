@@ -77,30 +77,45 @@ include CMakeFiles/t1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/t1.dir/flags.make
 
-CMakeFiles/t1.dir/main.c.o: CMakeFiles/t1.dir/flags.make
-CMakeFiles/t1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/t1.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/t1.dir/main.c.o   -c "/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/main.c"
+CMakeFiles/t1.dir/Source_Files/main.c.o: CMakeFiles/t1.dir/flags.make
+CMakeFiles/t1.dir/Source_Files/main.c.o: ../Source\ Files/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/t1.dir/Source_Files/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/t1.dir/Source_Files/main.c.o   -c "/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Source Files/main.c"
 
-CMakeFiles/t1.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/t1.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/main.c" > CMakeFiles/t1.dir/main.c.i
+CMakeFiles/t1.dir/Source_Files/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/t1.dir/Source_Files/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Source Files/main.c" > CMakeFiles/t1.dir/Source_Files/main.c.i
 
-CMakeFiles/t1.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/t1.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/main.c" -o CMakeFiles/t1.dir/main.c.s
+CMakeFiles/t1.dir/Source_Files/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/t1.dir/Source_Files/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Source Files/main.c" -o CMakeFiles/t1.dir/Source_Files/main.c.s
+
+CMakeFiles/t1.dir/Source_Files/trees.c.o: CMakeFiles/t1.dir/flags.make
+CMakeFiles/t1.dir/Source_Files/trees.c.o: ../Source\ Files/trees.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/t1.dir/Source_Files/trees.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/t1.dir/Source_Files/trees.c.o   -c "/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Source Files/trees.c"
+
+CMakeFiles/t1.dir/Source_Files/trees.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/t1.dir/Source_Files/trees.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Source Files/trees.c" > CMakeFiles/t1.dir/Source_Files/trees.c.i
+
+CMakeFiles/t1.dir/Source_Files/trees.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/t1.dir/Source_Files/trees.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Source Files/trees.c" -o CMakeFiles/t1.dir/Source_Files/trees.c.s
 
 # Object files for target t1
 t1_OBJECTS = \
-"CMakeFiles/t1.dir/main.c.o"
+"CMakeFiles/t1.dir/Source_Files/main.c.o" \
+"CMakeFiles/t1.dir/Source_Files/trees.c.o"
 
 # External object files for target t1
 t1_EXTERNAL_OBJECTS =
 
-t1: CMakeFiles/t1.dir/main.c.o
+t1: CMakeFiles/t1.dir/Source_Files/main.c.o
+t1: CMakeFiles/t1.dir/Source_Files/trees.c.o
 t1: CMakeFiles/t1.dir/build.make
 t1: CMakeFiles/t1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable t1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable t1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/t1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -78,7 +78,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/main.c">
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Header Files/trees.h">
+			<Option target="t1"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Source Files/main.c">
+			<Option target="t1"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Source Files/trees.c">
 			<Option target="t1"/>
 		</Unit>
 		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/CMakeLists.txt">

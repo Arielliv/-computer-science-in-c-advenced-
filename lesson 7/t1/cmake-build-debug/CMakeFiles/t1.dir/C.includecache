@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Header Files/trees.h
+stdbool.h
+-
+stdlib.h
+-
+
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Source Files/trees.c
+stdbool.h
+-
+../Header Files/trees.h
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 7/t1/Header Files/trees.h
+
