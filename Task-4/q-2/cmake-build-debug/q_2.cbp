@@ -81,6 +81,18 @@
 		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/main.c">
 			<Option target="q_2"/>
 		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/trees.c">
+			<Option target="q_2"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/trees.h">
+			<Option target="q_2"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/utils.c">
+			<Option target="q_2"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/utils.h">
+			<Option target="q_2"/>
+		</Unit>
 		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

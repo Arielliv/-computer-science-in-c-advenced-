@@ -170,6 +170,60 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_2.dir/build.make CMakeFiles/q_2.dir/main.c.s
 .PHONY : main.c.s
 
+trees.o: trees.c.o
+
+.PHONY : trees.o
+
+# target to build an object file
+trees.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_2.dir/build.make CMakeFiles/q_2.dir/trees.c.o
+.PHONY : trees.c.o
+
+trees.i: trees.c.i
+
+.PHONY : trees.i
+
+# target to preprocess a source file
+trees.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_2.dir/build.make CMakeFiles/q_2.dir/trees.c.i
+.PHONY : trees.c.i
+
+trees.s: trees.c.s
+
+.PHONY : trees.s
+
+# target to generate assembly for a file
+trees.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_2.dir/build.make CMakeFiles/q_2.dir/trees.c.s
+.PHONY : trees.c.s
+
+utils.o: utils.c.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_2.dir/build.make CMakeFiles/q_2.dir/utils.c.o
+.PHONY : utils.c.o
+
+utils.i: utils.c.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_2.dir/build.make CMakeFiles/q_2.dir/utils.c.i
+.PHONY : utils.c.i
+
+utils.s: utils.c.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_2.dir/build.make CMakeFiles/q_2.dir/utils.c.s
+.PHONY : utils.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +236,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... trees.o"
+	@echo "... trees.i"
+	@echo "... trees.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 
