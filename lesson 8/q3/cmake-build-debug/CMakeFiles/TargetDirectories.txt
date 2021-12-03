@@ -1,0 +1,3 @@
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 8/q3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 8/q3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 8/q3/cmake-build-debug/CMakeFiles/q3.dir
