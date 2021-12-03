@@ -81,6 +81,12 @@
 		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 8/q3/main.c">
 			<Option target="q3"/>
 		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 8/q3/products.c">
+			<Option target="q3"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 8/q3/products.h">
+			<Option target="q3"/>
+		</Unit>
 		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 8/q3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

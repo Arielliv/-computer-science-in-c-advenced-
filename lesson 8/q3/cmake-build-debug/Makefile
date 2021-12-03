@@ -170,6 +170,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/main.c.s
 .PHONY : main.c.s
 
+products.o: products.c.o
+
+.PHONY : products.o
+
+# target to build an object file
+products.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/products.c.o
+.PHONY : products.c.o
+
+products.i: products.c.i
+
+.PHONY : products.i
+
+# target to preprocess a source file
+products.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/products.c.i
+.PHONY : products.c.i
+
+products.s: products.c.s
+
+.PHONY : products.s
+
+# target to generate assembly for a file
+products.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/products.c.s
+.PHONY : products.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... products.o"
+	@echo "... products.i"
+	@echo "... products.s"
 .PHONY : help
 
 

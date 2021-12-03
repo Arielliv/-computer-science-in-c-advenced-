@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/q3.dir/main.c.o"
+  "CMakeFiles/q3.dir/products.c.o"
   "q3"
   "q3.pdb"
 )

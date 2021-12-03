@@ -3,4 +3,4 @@ project(q3 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(q3 main.c)
+add_executable(q3 main.c products.h products.c)
