@@ -20,7 +20,7 @@ bool isOneDigitNumber(char num) {
 }
 
 bool isOperatorSign(char sign) {
-    if (sign == '+' || sign == '-' || sign == ':' || sign == '*' || sign == '%') {
+    if (sign == '+' || sign == '-' || sign == ':' || sign == '*' || sign == '/' || sign == '%') {
         return true;
     } else {
         return false;
@@ -40,17 +40,24 @@ int charToInt(unsigned char num) {
 }
 
 int calc(int num1, unsigned char operator, int num2) {
-    if (operator == '+') {
-        return num1 + num2;
-    } else if (operator == '-') {
-        return num1 - num2;
-    } else if (operator == '*') {
-        return num1 * num2;
-    } else if (operator == '/') {
-        return num1 / num2;
-    } else if (operator == '%') {
-        return num1 % num2;
-    } else {
-        return -1;
+    switch (operator) {
+        case '+': {
+            return num1 + num2;
+        }
+        case '-': {
+            return num1 - num2;
+        }
+
+        case '*': {
+            return num1 * num2;
+        }
+        case '/': {
+            return num1 / num2;
+        }
+        case '%': {
+            return num1 % num2;
+        }
+        default:
+            return NULL;
     }
 }

@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/trees.c
-trees.h
-/Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/trees.h
-utils.h
-/Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/utils.h
-
-/Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/trees.h
-stdio.h
--
-stdlib.h
--
-string.h
--
-stdbool.h
--
-
 /Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/utils.c
 utils.h
 /Users/ariell/Education/computer-science-in-c-advanced/Task-4/q-2/utils.h

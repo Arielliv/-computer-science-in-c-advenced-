@@ -58,13 +58,13 @@ int buildExpressionTree(char *str, Tree *tr) {
 bool isValid(char *str) {
     int index = 0;
     char curr = str[index];
-    int leftBracketsCounter = 0, rightBracketsCounter = 0;
+    int BracketsCounter = 0;
     while (curr != '\0') {
         if (isBracketsSign(curr)) {
             if (curr == '(') {
-                leftBracketsCounter++;
+                BracketsCounter++;
             } else {
-                rightBracketsCounter++;
+                BracketsCounter--;
             }
         } else if (!isOperatorSign(curr) && !isOneDigitNumber(curr)) {
             return false;
@@ -72,7 +72,7 @@ bool isValid(char *str) {
         index++;
         curr = str[index];
     }
-    if (leftBracketsCounter == rightBracketsCounter) {
+    if (BracketsCounter == 0) {
         return true;
     } else {
         return false;
