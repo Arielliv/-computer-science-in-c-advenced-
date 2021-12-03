@@ -30,10 +30,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac6fef7d-308f-4f14-a2fe-89ac9fbb3063" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/trees.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trees.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/misc.xml" beforeDir="false" />
@@ -155,20 +151,13 @@
       <change beforePath="$PROJECT_DIR$/../../Task-3/t3-5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-3/t3-5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-3/t4-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-3/t4-3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/q_2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/q_2.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_2.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/q_2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/q_2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trees.c" beforeDir="false" afterPath="$PROJECT_DIR$/trees.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trees.h" beforeDir="false" afterPath="$PROJECT_DIR$/trees.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/utils.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../t-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../t-1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 4/t1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 4/t1/.idea/workspace.xml" afterDir="false" />
@@ -230,7 +219,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638386125211</updated>
-      <workItem from="1638386126970" duration="8240000" />
+      <workItem from="1638386126970" duration="14099000" />
     </task>
     <servers />
   </component>
@@ -249,42 +238,42 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2818" y="16" key="#xdebugger.evaluate" timestamp="1638396438723">
+    <state x="2818" y="16" key="#xdebugger.evaluate" timestamp="1638435207817">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state x="2818" y="16" key="#xdebugger.evaluate/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638396438723" />
-    <state width="1878" height="402" key="GridCell.Tab.0.bottom" timestamp="1638396439435">
+    <state x="2818" y="16" key="#xdebugger.evaluate/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638435207817" />
+    <state width="1878" height="327" key="GridCell.Tab.0.bottom" timestamp="1638440735691">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638396439435" />
-    <state width="1878" height="402" key="GridCell.Tab.0.center" timestamp="1638396439434">
+    <state width="1878" height="327" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638440735691" />
+    <state width="1878" height="327" key="GridCell.Tab.0.center" timestamp="1638440735690">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638396439434" />
-    <state width="1878" height="402" key="GridCell.Tab.0.left" timestamp="1638396439433">
+    <state width="1878" height="327" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638440735690" />
+    <state width="1878" height="327" key="GridCell.Tab.0.left" timestamp="1638440735690">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638396439433" />
-    <state width="1878" height="402" key="GridCell.Tab.0.right" timestamp="1638396439434">
+    <state width="1878" height="327" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638440735690" />
+    <state width="1878" height="327" key="GridCell.Tab.0.right" timestamp="1638440735691">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638396439434" />
-    <state width="1878" height="402" key="GridCell.Tab.1.bottom" timestamp="1638396442600">
+    <state width="1878" height="327" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638440735691" />
+    <state width="1878" height="402" key="GridCell.Tab.1.bottom" timestamp="1638440735560">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.1.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638396442600" />
-    <state width="1878" height="402" key="GridCell.Tab.1.center" timestamp="1638396442599">
+    <state width="1878" height="402" key="GridCell.Tab.1.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638440735560" />
+    <state width="1878" height="402" key="GridCell.Tab.1.center" timestamp="1638440735560">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.1.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638396442599" />
-    <state width="1878" height="402" key="GridCell.Tab.1.left" timestamp="1638396442599">
+    <state width="1878" height="402" key="GridCell.Tab.1.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638440735560" />
+    <state width="1878" height="402" key="GridCell.Tab.1.left" timestamp="1638440735560">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.1.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638396442599" />
-    <state width="1878" height="402" key="GridCell.Tab.1.right" timestamp="1638396442599">
+    <state width="1878" height="402" key="GridCell.Tab.1.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638440735560" />
+    <state width="1878" height="402" key="GridCell.Tab.1.right" timestamp="1638440735560">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.1.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638396442599" />
+    <state width="1878" height="402" key="GridCell.Tab.1.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638440735560" />
     <state x="2263" y="77" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1638396704331">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
@@ -293,5 +282,21 @@
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
     <state x="2305" y="139" width="670" height="676" key="search.everywhere.popup/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638396631510" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/trees.c</url>
+          <line>145</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/trees.c</url>
+          <line>143</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

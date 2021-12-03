@@ -34,3 +34,23 @@ bool isBracketsSign(char sign) {
         return false;
     }
 }
+
+int charToInt(unsigned char num) {
+    return (num - '0');
+}
+
+int calc(int num1, unsigned char operator, int num2) {
+    if (operator == '+') {
+        return num1 + num2;
+    } else if (operator == '-') {
+        return num1 - num2;
+    } else if (operator == '*') {
+        return num1 * num2;
+    } else if (operator == '/') {
+        return num1 / num2;
+    } else if (operator == '%') {
+        return num1 % num2;
+    } else {
+        return -1;
+    }
+}

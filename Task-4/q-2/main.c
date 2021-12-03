@@ -32,7 +32,7 @@ void main() {
 
     if (expressionOK == TRUE) {
 
-//        res = calcExpression(tr);
+        res = calcExpression(tr);
 
         printf("%s = %.2f", str, res);
 

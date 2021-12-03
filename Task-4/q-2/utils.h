@@ -17,4 +17,8 @@ bool isOperatorSign(char sign);
 
 bool isBracketsSign(char sign);
 
+int calc(int num1, unsigned char operator, int num2);
+
+int charToInt(unsigned char num);
+
 #endif //Q_2_UTILS_H

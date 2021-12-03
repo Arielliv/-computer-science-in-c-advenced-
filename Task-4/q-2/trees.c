@@ -50,6 +50,7 @@ int buildExpressionTree(char *str, Tree *tr) {
     isTreeValid = isValid(str);
     if (isTreeValid) {
         *tr = buildExpressionTreeHelper(str);
+        //        tr->root = helper(str,0, strlen(str)-1);
     }
     return isTreeValid;
 }
@@ -107,19 +108,22 @@ Tree buildExpressionTreeHelper(char *str) {
 
     TreeNode *tNode = createNewTreeNode(-1, NULL, NULL);
 
-    if (str[1] == '\0') {
+    if (strlen(str) == 1) {
         tNode->data = str[0];
         tNode->left = tNode->right = NULL;
     } else {
+        // find the correct operator sign index
         location = findMiddleOperatorLocation(str);
         tNode->data = str[location];
         char temp = str[location];
 
+        // cut str in operator sign index
         str[location] = '\0';
         tNode->left = buildExpressionTreeHelper(str + 1).root;
 
         str[location] = temp;
         temp = str[strlen(str) - 1];
+
         str[strlen(str) - 1] = '\0';
         tNode->right = buildExpressionTreeHelper(str + location + 1).root;
         str[strlen(str) + 1] = '\0';
@@ -127,4 +131,18 @@ Tree buildExpressionTreeHelper(char *str) {
     }
     resTree.root = tNode;
     return resTree;
+}
+
+int calcExpression(Tree tr) {
+    return calcExpressionHelper(tr.root);
+}
+
+int calcExpressionHelper(TreeNode *tNode) {
+    if (tNode == NULL) {
+        return 0;
+    } else if (tNode->left == NULL && tNode->right == NULL) {
+        return charToInt(tNode->data);
+    } else {
+        return calc(calcExpressionHelper(tNode->left), tNode->data, calcExpressionHelper(tNode->right));
+    }
 }

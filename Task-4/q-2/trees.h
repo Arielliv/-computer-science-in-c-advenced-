@@ -40,4 +40,12 @@ bool isValid(char *str);
 
 int findMiddleOperatorLocation(char *str);
 
+int calcExpression(Tree tr);
+
+int find(char *str, int startIndex, int endIndex);
+
+TreeNode *helper(char *str, int startIndex, int endIndex);
+
+int calcExpressionHelper(TreeNode* tNode);
+
 #endif //Q_2_TREES_H
