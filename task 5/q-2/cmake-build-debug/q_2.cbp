@@ -78,7 +78,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/employee.c">
+			<Option target="q_2"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/employee.h">
+			<Option target="q_2"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/files.c">
+			<Option target="q_2"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/files.h">
+			<Option target="q_2"/>
+		</Unit>
 		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/main.c">
+			<Option target="q_2"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/utils.c">
+			<Option target="q_2"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/utils.h">
 			<Option target="q_2"/>
 		</Unit>
 		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/CMakeLists.txt">

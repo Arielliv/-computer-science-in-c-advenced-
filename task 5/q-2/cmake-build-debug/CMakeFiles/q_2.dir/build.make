@@ -90,17 +90,62 @@ CMakeFiles/q_2.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/q_2.dir/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/main.c" -o CMakeFiles/q_2.dir/main.c.s
 
+CMakeFiles/q_2.dir/utils.c.o: CMakeFiles/q_2.dir/flags.make
+CMakeFiles/q_2.dir/utils.c.o: ../utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/q_2.dir/utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/q_2.dir/utils.c.o   -c "/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/utils.c"
+
+CMakeFiles/q_2.dir/utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/q_2.dir/utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/utils.c" > CMakeFiles/q_2.dir/utils.c.i
+
+CMakeFiles/q_2.dir/utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/q_2.dir/utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/utils.c" -o CMakeFiles/q_2.dir/utils.c.s
+
+CMakeFiles/q_2.dir/files.c.o: CMakeFiles/q_2.dir/flags.make
+CMakeFiles/q_2.dir/files.c.o: ../files.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/q_2.dir/files.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/q_2.dir/files.c.o   -c "/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/files.c"
+
+CMakeFiles/q_2.dir/files.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/q_2.dir/files.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/files.c" > CMakeFiles/q_2.dir/files.c.i
+
+CMakeFiles/q_2.dir/files.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/q_2.dir/files.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/files.c" -o CMakeFiles/q_2.dir/files.c.s
+
+CMakeFiles/q_2.dir/employee.c.o: CMakeFiles/q_2.dir/flags.make
+CMakeFiles/q_2.dir/employee.c.o: ../employee.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/q_2.dir/employee.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/q_2.dir/employee.c.o   -c "/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/employee.c"
+
+CMakeFiles/q_2.dir/employee.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/q_2.dir/employee.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/employee.c" > CMakeFiles/q_2.dir/employee.c.i
+
+CMakeFiles/q_2.dir/employee.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/q_2.dir/employee.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/employee.c" -o CMakeFiles/q_2.dir/employee.c.s
+
 # Object files for target q_2
 q_2_OBJECTS = \
-"CMakeFiles/q_2.dir/main.c.o"
+"CMakeFiles/q_2.dir/main.c.o" \
+"CMakeFiles/q_2.dir/utils.c.o" \
+"CMakeFiles/q_2.dir/files.c.o" \
+"CMakeFiles/q_2.dir/employee.c.o"
 
 # External object files for target q_2
 q_2_EXTERNAL_OBJECTS =
 
 q_2: CMakeFiles/q_2.dir/main.c.o
+q_2: CMakeFiles/q_2.dir/utils.c.o
+q_2: CMakeFiles/q_2.dir/files.c.o
+q_2: CMakeFiles/q_2.dir/employee.c.o
 q_2: CMakeFiles/q_2.dir/build.make
 q_2: CMakeFiles/q_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable q_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/ariell/Education/computer-science-in-c-advanced/task 5/q-2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable q_2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/q_2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
