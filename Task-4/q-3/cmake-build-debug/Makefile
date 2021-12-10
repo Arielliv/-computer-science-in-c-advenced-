@@ -143,6 +143,33 @@ q_3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/build
 .PHONY : q_3/fast
 
+list.o: list.c.o
+
+.PHONY : list.o
+
+# target to build an object file
+list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/list.c.o
+.PHONY : list.c.o
+
+list.i: list.c.i
+
+.PHONY : list.i
+
+# target to preprocess a source file
+list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/list.c.i
+.PHONY : list.c.i
+
+list.s: list.c.s
+
+.PHONY : list.s
+
+# target to generate assembly for a file
+list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/list.c.s
+.PHONY : list.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -170,6 +197,60 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/main.c.s
 .PHONY : main.c.s
 
+tree.o: tree.c.o
+
+.PHONY : tree.o
+
+# target to build an object file
+tree.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/tree.c.o
+.PHONY : tree.c.o
+
+tree.i: tree.c.i
+
+.PHONY : tree.i
+
+# target to preprocess a source file
+tree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/tree.c.i
+.PHONY : tree.c.i
+
+tree.s: tree.c.s
+
+.PHONY : tree.s
+
+# target to generate assembly for a file
+tree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/tree.c.s
+.PHONY : tree.c.s
+
+util.o: util.c.o
+
+.PHONY : util.o
+
+# target to build an object file
+util.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/util.c.o
+.PHONY : util.c.o
+
+util.i: util.c.i
+
+.PHONY : util.i
+
+# target to preprocess a source file
+util.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/util.c.i
+.PHONY : util.c.i
+
+util.s: util.c.s
+
+.PHONY : util.s
+
+# target to generate assembly for a file
+util.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q_3.dir/build.make CMakeFiles/q_3.dir/util.c.s
+.PHONY : util.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +260,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... q_3"
+	@echo "... list.o"
+	@echo "... list.i"
+	@echo "... list.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tree.o"
+	@echo "... tree.i"
+	@echo "... tree.s"
+	@echo "... util.o"
+	@echo "... util.i"
+	@echo "... util.s"
 .PHONY : help
 
 
