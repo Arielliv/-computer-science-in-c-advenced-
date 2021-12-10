@@ -3,4 +3,4 @@ project(q1 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(q1 main.c)
+add_executable(q1 main.c utils.h utils.c files.h files.c)
