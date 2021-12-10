@@ -170,6 +170,60 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/main.c.s
 .PHONY : main.c.s
 
+student.o: student.c.o
+
+.PHONY : student.o
+
+# target to build an object file
+student.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/student.c.o
+.PHONY : student.c.o
+
+student.i: student.c.i
+
+.PHONY : student.i
+
+# target to preprocess a source file
+student.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/student.c.i
+.PHONY : student.c.i
+
+student.s: student.c.s
+
+.PHONY : student.s
+
+# target to generate assembly for a file
+student.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/student.c.s
+.PHONY : student.c.s
+
+utils.o: utils.c.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/utils.c.o
+.PHONY : utils.c.o
+
+utils.i: utils.c.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/utils.c.i
+.PHONY : utils.c.i
+
+utils.s: utils.c.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/utils.c.s
+.PHONY : utils.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +236,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... student.o"
+	@echo "... student.i"
+	@echo "... student.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

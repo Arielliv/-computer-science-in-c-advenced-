@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/ariell/Education/computer-science-in-c-advanced/lesson 9/q1/main.c" "/Users/ariell/Education/computer-science-in-c-advanced/lesson 9/q1/cmake-build-debug/CMakeFiles/q1.dir/main.c.o"
+  "/Users/ariell/Education/computer-science-in-c-advanced/lesson 9/q1/student.c" "/Users/ariell/Education/computer-science-in-c-advanced/lesson 9/q1/cmake-build-debug/CMakeFiles/q1.dir/student.c.o"
+  "/Users/ariell/Education/computer-science-in-c-advanced/lesson 9/q1/utils.c" "/Users/ariell/Education/computer-science-in-c-advanced/lesson 9/q1/cmake-build-debug/CMakeFiles/q1.dir/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

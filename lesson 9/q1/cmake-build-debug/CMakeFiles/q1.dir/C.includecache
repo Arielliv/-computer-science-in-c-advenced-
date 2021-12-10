@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 9/q1/main.c
+student.h
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 9/q1/student.h
+
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 9/q1/student.h
+stdlib.h
+-
+stdio.h
+-
+
