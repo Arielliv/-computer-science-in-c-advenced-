@@ -10,21 +10,17 @@
 #include <string.h>
 #include "students.h"
 
-typedef struct studentWithIndex {
-    STUDENT student;
-    int index;
-} StudentWithIndex;
-
-
 void Exe5Q3(char *fname);
 
-StudentWithIndex *createStudentsListWithIndexesFromStudentsFile(FILE *fp, int *numOfStudents);
+StudentWithIndex **createStudentsListWithIndexesFromStudentsFile(FILE *fp, short int *numOfStudents);
 
-STUDENT createStudentWithIndexFromStudentsFile(FILE *fp);
+StudentWithIndex *createStudentWithIndexFromStudentsFile(FILE *fp);
 
-void sortStudents(STUDENT *studentsList, int numOfStudents);
+void sortStudents(StudentWithIndex **studentsList, short int numOfStudents);
 
-void createStudentIndexFile(STUDENT *studentsList, int numOfStudents);
+void createStudentIndexFile(StudentWithIndex **studentsList, short int numOfStudents, char *fname);
 
+void printStudentWithIndex(StudentWithIndex *studentWithIndex);
 
+void freeAll(StudentWithIndex **studentsList, short int numOfStudents);
 #endif //Q_3_A_FILES_H
