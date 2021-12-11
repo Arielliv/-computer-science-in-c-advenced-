@@ -19,8 +19,14 @@ Employee *readEmployeeFromFile(FILE *fp);
 
 float *readListOfSalaryAddonsFile(FILE *fp, int numOfEmployees);
 
-void updateEmployeesSalary(Employee **employees, float *SalaryAddons, int numOfEmployees);
+void updateEmployeesSalary(Employee **employees, float *salaryAddons, int numOfEmployees);
+
+void sortEmployeesList(Employee **employees, int numOfEmployees);
+
+void swapEmployees(Employee *employee1, Employee *employee2);
 
 void updateListOfEmployeesFile(FILE *fp, Employee **employees, int numOfEmployees);
+
+void freeAll(Employee **employees, float *salaryAddons, int numOfEmployees);
 
 #endif //Q_2_FILES_H
