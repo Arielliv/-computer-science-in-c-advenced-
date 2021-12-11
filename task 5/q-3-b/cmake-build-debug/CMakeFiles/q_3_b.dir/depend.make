@@ -11,6 +11,7 @@ CMakeFiles/q_3_b.dir/main.c.o: ../main.c
 CMakeFiles/q_3_b.dir/main.c.o: ../students.h
 
 CMakeFiles/q_3_b.dir/students.c.o: ../students.c
+CMakeFiles/q_3_b.dir/students.c.o: ../students.h
 
 CMakeFiles/q_3_b.dir/utils.c.o: ../utils.c
 CMakeFiles/q_3_b.dir/utils.c.o: ../utils.h

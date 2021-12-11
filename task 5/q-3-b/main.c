@@ -23,7 +23,6 @@ void main() {
 void printNames(char **records, int size) {
 
     int i;
-
     printf("The students names are:\n");
 
     for (i = 0; i < size; i++)

@@ -22,4 +22,6 @@ createStudentNamesListByIndex(FILE *fp, int avg, int index, int studentsIndexLis
 
 int studentBinarySearchByIndexesInFile(FILE *fp, int studentsIndexList[], int left, int right, int searchedAvg);
 
+void freeAll(int studentsIndexList[], int numOfStudents, char **studentsNames, int size);
+
 #endif //Q_3_B_FILES_H

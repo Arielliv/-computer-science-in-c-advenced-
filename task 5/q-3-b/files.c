@@ -30,7 +30,8 @@ createStudentNamesListByIndex(FILE *fp, int avg, int index, int studentsIndexLis
         return NULL;
     } else {
         studentsCounter++;
-        studentsNames[logSize] = createStudentFromStudentsFileByIndex(fp, studentsIndexList[index])->name;
+        STUDENT *tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[index]);
+        studentsNames[logSize] = tmpStudent->name;
         logSize++;
         loopUpIndex++;
         loopDownIndex--;
@@ -40,7 +41,7 @@ createStudentNamesListByIndex(FILE *fp, int avg, int index, int studentsIndexLis
                 studentsNames = (char **) realloc(studentsNames, sizeof(char *) * phySize);
                 checkMemoryAllocation(studentsNames);
             }
-            STUDENT *tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[index]);
+            tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[index]);
             if (tmpStudent->average == avg) {
                 studentsNames[logSize] = tmpStudent->name;
                 logSize++;
@@ -55,7 +56,7 @@ createStudentNamesListByIndex(FILE *fp, int avg, int index, int studentsIndexLis
                 studentsNames = (char **) realloc(studentsNames, sizeof(char *) * phySize);
                 checkMemoryAllocation(studentsNames);
             }
-            STUDENT *tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[index]);
+            tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[index]);
             if (tmpStudent->average == avg) {
                 studentsNames[logSize] = tmpStudent->name;
                 logSize++;
@@ -141,4 +142,12 @@ STUDENT *createStudentFromStudentsFileByIndex(FILE *fp, int index) {
     currStudent->average = currAvg;
 
     return currStudent;
+}
+
+void freeAll(int studentsIndexList[], int numOfStudents, char **studentsNames, int size) {
+    free(studentsIndexList);
+    for (int i = 0; i < size; ++i) {
+        free(studentsNames[i]);
+    }
+    free(studentsNames);
 }
