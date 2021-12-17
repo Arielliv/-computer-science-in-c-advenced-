@@ -22,16 +22,25 @@ void Exe5Q2(char *fname1, char *fname2) {
 }
 
 Employee **readListOfEmployeesFile(FILE *fp, int *size) {
+    int logSize = 0, phySize = 1;
     int employeeCounter = 0;
-    Employee **listOfEmployees = (Employee **) malloc(sizeof(Employee *) * 1);
+    Employee **listOfEmployees = (Employee **) malloc(sizeof(Employee *) * phySize);
+    checkMemoryAllocation(listOfEmployees);
+
     fseek(fp, 0, SEEK_SET);
 
     while (1) {
+        if (logSize == phySize) {
+            phySize *= 2;
+            listOfEmployees = (Employee **) realloc(listOfEmployees, sizeof(Employee *) * phySize);
+            checkMemoryAllocation(listOfEmployees);
+        }
         Employee *currEmployee = readEmployeeFromFile(fp);
         if (feof(fp)) {
             break;
         }
         listOfEmployees[employeeCounter] = currEmployee;
+        logSize++;
         employeeCounter++;
     }
     *size = employeeCounter;

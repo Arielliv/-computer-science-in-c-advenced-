@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-// argv[1] - first file name
-// argv[2] - second file name
 #include "files.h"
 
 // argv[1] - name of the file1
