@@ -1,6 +1,8 @@
 //
 // Created by 315363366 on 10/12/2021.
 //
+#define _CRT_SECURE_NO_WARNINGS
+
 #include "files.h"
 #include "employee.h"
 #include "utils.h"
@@ -9,9 +11,13 @@ void Exe5Q2(char *fname1, char *fname2) {
     int numOfEmployees;
     FILE *fp1 = fopen(fname1, "r+b");
     checkFile(fp1);
+    fseek(fp1, 0, SEEK_END);
+    int file1Size = ftell(fp1);
+    rewind(fp1);
+
     FILE *fp2 = fopen(fname2, "rb");
     checkFile(fp2);
-    Employee **listOfEmployees = readListOfEmployeesFile(fp1, &numOfEmployees);
+    Employee **listOfEmployees = readListOfEmployeesFile(fp1, &numOfEmployees, file1Size);
     float *salaryArray = readListOfSalaryAddonsFile(fp2, numOfEmployees);
     updateEmployeesSalary(listOfEmployees, salaryArray, numOfEmployees);
     sortEmployeesList(listOfEmployees, numOfEmployees);
@@ -21,24 +27,20 @@ void Exe5Q2(char *fname1, char *fname2) {
     freeAll(listOfEmployees, salaryArray, numOfEmployees);
 }
 
-Employee **readListOfEmployeesFile(FILE *fp, int *size) {
+Employee **readListOfEmployeesFile(FILE *fp, int *size, int fileSize) {
     int logSize = 0, phySize = 1;
     int employeeCounter = 0;
     Employee **listOfEmployees = (Employee **) malloc(sizeof(Employee *) * phySize);
     checkMemoryAllocation(listOfEmployees);
 
-    fseek(fp, 0, SEEK_SET);
-
-    while (1) {
+    while (ftell(fp) < fileSize) {
         if (logSize == phySize) {
             phySize *= 2;
             listOfEmployees = (Employee **) realloc(listOfEmployees, sizeof(Employee *) * phySize);
             checkMemoryAllocation(listOfEmployees);
         }
         Employee *currEmployee = readEmployeeFromFile(fp);
-        if (feof(fp)) {
-            break;
-        }
+
         listOfEmployees[employeeCounter] = currEmployee;
         logSize++;
         employeeCounter++;
@@ -53,9 +55,9 @@ Employee *readEmployeeFromFile(FILE *fp) {
     int currNameSize;
     fread(&currNameSize, sizeof(int), 1, fp);
 
-    char *currName = (char *) malloc(sizeof(char) * currNameSize);
-    fread(currName, sizeof(char) * currNameSize, 1, fp);
-
+    char *currName = (char *) malloc((sizeof(char) * currNameSize) + 1);
+    fread(currName, sizeof(char), currNameSize, fp);
+    currName[currNameSize] = '\0';
     float currSalary;
     fread(&currSalary, sizeof(float), 1, fp);
     currEmployee->name = currName;

@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#define _CRT_SECURE_NO_WARNINGS
 #include "files.h"
 
 // argv[1] - name of the file1
