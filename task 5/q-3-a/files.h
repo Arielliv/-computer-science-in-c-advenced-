@@ -10,17 +10,17 @@
 #include <string.h>
 #include "students.h"
 
-void Exe5Q3(char *fname);
+void Exe5Q3(char* fname);
 
-StudentWithIndex **createStudentsListWithIndexesFromStudentsFile(FILE *fp, short int *numOfStudents);
+StudentWithIndex** createStudentsListWithIndexesFromStudentsFile(FILE* fp, short int* numOfStudents);
 
-StudentWithIndex *createStudentWithIndexFromStudentsFile(FILE *fp);
+StudentWithIndex* createStudentWithIndexFromStudentsFile(FILE* fp);
 
-void sortStudents(StudentWithIndex **studentsList, short int numOfStudents);
+void sortStudents(StudentWithIndex** studentsList, short int numOfStudents);
 
-void createStudentIndexFile(StudentWithIndex **studentsList, short int numOfStudents, char *fname);
+void createStudentIndexFile(StudentWithIndex** studentsList, short int numOfStudents, char* fname);
 
-void printStudentWithIndex(StudentWithIndex *studentWithIndex);
+void printStudentWithIndex(StudentWithIndex* studentWithIndex);
 
-void freeAll(StudentWithIndex **studentsList, short int numOfStudents);
+void freeAll(StudentWithIndex** studentsList, short int numOfStudents);
 #endif //Q_3_A_FILES_H
