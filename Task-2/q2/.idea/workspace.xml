@@ -30,8 +30,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="decc1ea6-c8f9-4c27-95a3-93ca425261e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../q3-optionb/.idea/q3-optionb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q3-optionb/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q3-optionb/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 4/t1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 4/t1/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,6 +89,8 @@
       <workItem from="1635286353189" duration="180000" />
       <workItem from="1635286563008" duration="3163000" />
       <workItem from="1635499045209" duration="156000" />
+      <workItem from="1635579871592" duration="3078000" />
+      <workItem from="1636107421207" duration="592000" />
     </task>
     <servers />
   </component>
@@ -102,22 +110,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="401" key="GridCell.Tab.0.bottom" timestamp="1635316402545">
+    <state width="1878" height="327" key="GridCell.Tab.0.bottom" timestamp="1635750503108">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="401" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635316402545" />
-    <state width="1878" height="401" key="GridCell.Tab.0.center" timestamp="1635316402544">
+    <state width="1878" height="327" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635750503108" />
+    <state width="1878" height="327" key="GridCell.Tab.0.center" timestamp="1635750503107">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="401" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635316402544" />
-    <state width="1878" height="401" key="GridCell.Tab.0.left" timestamp="1635316402544">
+    <state width="1878" height="327" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635750503107" />
+    <state width="1878" height="327" key="GridCell.Tab.0.left" timestamp="1635750503107">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="401" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635316402544" />
-    <state width="1878" height="401" key="GridCell.Tab.0.right" timestamp="1635316402545">
+    <state width="1878" height="327" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635750503107" />
+    <state width="1878" height="327" key="GridCell.Tab.0.right" timestamp="1635750503108">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="401" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635316402545" />
+    <state width="1878" height="327" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1635750503108" />
     <state width="1878" height="401" key="GridCell.Tab.1.bottom" timestamp="1635316402547">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
@@ -144,7 +152,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.c</url>
-          <line>200</line>
+          <line>202</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>

@@ -27,11 +27,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4cf85c2-e08a-4e37-bda5-64184f064f56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Task-2/q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task-2/q2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task-2/task1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task-2/task1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4e06da0f-f770-4eab-a6e8-486895e8d1aa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="20Dkvy8rMkQt7xo9J0G8mlxAS1M" />
+  <component name="ProjectId" id="1zaTnnIRIvw9qe7onSPHpFoiM0a" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,19 +50,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c4cf85c2-e08a-4e37-bda5-64184f064f56" name="Default Changelist" comment="" />
-      <created>1635586780018</created>
+      <changelist id="4e06da0f-f770-4eab-a6e8-486895e8d1aa" name="Default Changelist" comment="" />
+      <created>1634385368086</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1635586780018</updated>
-      <workItem from="1635586781293" duration="3000" />
-      <workItem from="1635750202907" duration="299000" />
-      <workItem from="1636107413251" duration="115000" />
+      <updated>1634385368086</updated>
+      <workItem from="1634385369504" duration="719000" />
+      <workItem from="1634386339544" duration="11000" />
     </task>
     <servers />
   </component>
@@ -83,6 +84,27 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2104" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1634385378458">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state x="2104" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1634385378458" />
+    <state width="1878" height="327" key="GridCell.Tab.0.bottom" timestamp="1634386156662">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1634386156662" />
+    <state width="1878" height="327" key="GridCell.Tab.0.center" timestamp="1634386156661">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1634386156661" />
+    <state width="1878" height="327" key="GridCell.Tab.0.left" timestamp="1634386156660">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1634386156660" />
+    <state width="1878" height="327" key="GridCell.Tab.0.right" timestamp="1634386156662">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1634386156662" />
   </component>
 </project>

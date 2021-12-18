@@ -179,6 +179,5 @@ void mergeHelper(ListNode *lnode1, ListNode *lnode2, List *resultList) {
             insertDataToEndList(resultList, *(lnode2->dataPtr));
             mergeHelper(lnode1, lnode2->next, resultList);
         }
-
     }
 }

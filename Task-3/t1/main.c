@@ -117,14 +117,18 @@ void removeNodeFromList(List *lst, ListNode *nodeTobeRemoved) {
 void removeNodeFromEndList(List *lst) {
     ListNode *curr;
     curr = lst->head;
+    if (curr->next == NULL) {
+        lst->head = lst->tail = NULL;
+    } else {
+        while (curr->next != lst->tail) {
+            curr = curr->next;
+        }
 
-    while (curr->next != lst->tail) {
-        curr = curr->next;
+        lst->tail = curr;
+        curr->next = NULL;
     }
-
-    lst->tail = curr;
-    curr->next = NULL;
 }
+
 
 void removeNodeFromStartList(List *lst) {
     if (lst->head == NULL) {

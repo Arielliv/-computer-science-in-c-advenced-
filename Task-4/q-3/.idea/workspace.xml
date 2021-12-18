@@ -30,19 +30,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4237d31a-7e0b-4002-90e9-300184d11987" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/q-3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/list.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/list.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lesson 7/t1/.idea/t1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lesson 8/q1/.idea/lesson 8.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/misc.xml" beforeDir="false" />
@@ -165,20 +152,6 @@
       <change beforePath="$PROJECT_DIR$/../../Task-3/t4-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-3/t4-3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../q-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../q-2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/q_3.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/q_3.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/q_3.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../t-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../t-1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 4/t1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 4/t1/.idea/workspace.xml" afterDir="false" />
@@ -252,21 +225,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="q_3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="q_3" TARGET_NAME="q_3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="q_3" RUN_TARGET_NAME="q_3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -279,6 +243,9 @@
       <option name="presentableId" value="Default" />
       <updated>1638541648738</updated>
       <workItem from="1638541650811" duration="10896000" />
+      <workItem from="1639131590488" duration="732000" />
+      <workItem from="1639149444541" duration="100000" />
+      <workItem from="1639149570967" duration="598000" />
     </task>
     <servers />
   </component>
@@ -295,6 +262,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2104" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638543474875">
@@ -345,6 +313,10 @@
     </state>
     <state width="1638" height="342" key="GridCell.Tab.1.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1638694752773" />
     <state width="1638" height="342" key="GridCell.Tab.1.right/0.25.1680.1025@0.25.1680.1025" timestamp="1638557726430" />
+    <state x="2149" y="98" key="SettingsEditor" timestamp="1639149548912">
+      <screen x="1680" y="-125" width="1920" height="1175" />
+    </state>
+    <state x="2149" y="98" key="SettingsEditor/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1639149548912" />
     <state x="459" y="152" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1638551275009">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>

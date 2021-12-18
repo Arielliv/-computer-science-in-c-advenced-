@@ -30,10 +30,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a6eca3-f795-4ae0-966a-09b4e077bef7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/trees.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trees.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/.idea/q-3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/list.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/list.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/tree.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/tree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/util.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../q-3/util.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson 7/t1/.idea/t1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson 8/q1/.idea/lesson 8.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/misc.xml" beforeDir="false" />
@@ -154,25 +163,64 @@
       <change beforePath="$PROJECT_DIR$/../../Task-3/t3-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-3/t3-2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-3/t3-5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-3/t3-5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-3/t4-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-3/t4-3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../q-2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/q_3.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/q_3.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/q_3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/q_3.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/q_3.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/q_3.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/q_3.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/q_3.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/q_3.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/CMakeFiles/q_3.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/cmake-build-debug/q_3.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/cmake-build-debug/q_3.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q-3/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../q-3/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t_1.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/t_1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/t_1.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 4/t1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 4/t1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 6/q-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 6/q-1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 7/t1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 7/t1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/.idea/lesson 8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/lesson_8.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/lesson_8.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/lesson_8.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/lesson_8.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/lesson_8.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/lesson_8.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/lesson_8.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/lesson_8.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/lesson_8.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/lesson_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/cmake-build-debug/lesson_8.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson 8/q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 8/q2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +244,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -205,19 +254,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="t_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="t_1" TARGET_NAME="t_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="t_1" RUN_TARGET_NAME="t_1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -230,6 +269,8 @@
       <option name="presentableId" value="Default" />
       <updated>1638298795784</updated>
       <workItem from="1638298799495" duration="6164000" />
+      <workItem from="1638386069092" duration="923000" />
+      <workItem from="1638542059130" duration="552000" />
     </task>
     <servers />
   </component>
@@ -246,6 +287,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1878" height="402" key="GridCell.Tab.0.bottom" timestamp="1638361662000">

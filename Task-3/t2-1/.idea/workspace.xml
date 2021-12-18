@@ -30,12 +30,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7946621-6d57-4bcc-b847-494006af46d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Task-1/.idea/task-1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/t2-1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../t2-3/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../t2-3/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-1/q1.2/.idea/misc.xml" beforeDir="false" />
@@ -150,9 +146,8 @@
       <change beforePath="$PROJECT_DIR$/../../Task-1/q2/main.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-2/q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/q2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task-2/task1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-2/task1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../t1/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../t1/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t2_1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/t2_1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson 4/t1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson 4/t1/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -178,22 +173,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="t2_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="t2_1" TARGET_NAME="t2_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="t2_1" RUN_TARGET_NAME="t2_1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -205,7 +197,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637003490512</updated>
-      <workItem from="1637003492482" duration="1661000" />
+      <workItem from="1637003492482" duration="1923000" />
+      <workItem from="1637006729528" duration="41000" />
+      <workItem from="1637013253526" duration="11000" />
     </task>
     <servers />
   </component>
@@ -222,39 +216,40 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="402" key="GridCell.Tab.0.bottom" timestamp="1637004947358">
+    <state width="1878" height="402" key="GridCell.Tab.0.bottom" timestamp="1637005416231">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637004947358" />
-    <state width="1878" height="402" key="GridCell.Tab.0.center" timestamp="1637004947357">
+    <state width="1878" height="402" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637005416231" />
+    <state width="1878" height="402" key="GridCell.Tab.0.center" timestamp="1637005416230">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637004947357" />
-    <state width="1878" height="402" key="GridCell.Tab.0.left" timestamp="1637004947356">
+    <state width="1878" height="402" key="GridCell.Tab.0.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637005416230" />
+    <state width="1878" height="402" key="GridCell.Tab.0.left" timestamp="1637005416230">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637004947356" />
-    <state width="1878" height="402" key="GridCell.Tab.0.right" timestamp="1637004947357">
+    <state width="1878" height="402" key="GridCell.Tab.0.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637005416230" />
+    <state width="1878" height="402" key="GridCell.Tab.0.right" timestamp="1637005416231">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637004947357" />
-    <state width="1878" height="402" key="GridCell.Tab.1.bottom" timestamp="1637004947270">
+    <state width="1878" height="402" key="GridCell.Tab.0.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637005416231" />
+    <state width="1878" height="402" key="GridCell.Tab.1.bottom" timestamp="1637005416233">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.1.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637004947270" />
-    <state width="1878" height="402" key="GridCell.Tab.1.center" timestamp="1637004947269">
+    <state width="1878" height="402" key="GridCell.Tab.1.bottom/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637005416233" />
+    <state width="1878" height="402" key="GridCell.Tab.1.center" timestamp="1637005416232">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.1.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637004947269" />
-    <state width="1878" height="402" key="GridCell.Tab.1.left" timestamp="1637004947269">
+    <state width="1878" height="402" key="GridCell.Tab.1.center/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637005416232" />
+    <state width="1878" height="402" key="GridCell.Tab.1.left" timestamp="1637005416231">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.1.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637004947269" />
-    <state width="1878" height="402" key="GridCell.Tab.1.right" timestamp="1637004947270">
+    <state width="1878" height="402" key="GridCell.Tab.1.left/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637005416231" />
+    <state width="1878" height="402" key="GridCell.Tab.1.right" timestamp="1637005416232">
       <screen x="1680" y="-125" width="1920" height="1175" />
     </state>
-    <state width="1878" height="402" key="GridCell.Tab.1.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637004947270" />
+    <state width="1878" height="402" key="GridCell.Tab.1.right/0.25.1680.1025/1680.-125.1920.1175@1680.-125.1920.1175" timestamp="1637005416232" />
   </component>
 </project>
