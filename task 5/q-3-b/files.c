@@ -1,36 +1,37 @@
 //
 // Created by 315363366 on 11/12/2021.
 //
-
+#define _CRT_SECURE_NO_WARNINGS
 #include "files.h"
 #include "utils.h"
 
-char **findAverageGrade(char *database, int avgGrade, int *resSize) {
+char** findAverageGrade(char* database, int avgGrade, int* resSize) {
     int numOfStudents;
-    char *newFileName = (char *) malloc(sizeof(char) * (strlen(database) + 4));
+    char* newFileName = (char*)malloc(sizeof(char) * (strlen(database) + 4));
     checkMemoryAllocation(newFileName);
     sprintf(newFileName, "%s.ind", database);
-    int *studentsIndexList = createStudentsIndexListFromFile(newFileName, &numOfStudents);
-    FILE *fp = fopen(database, "rb");
+    int* studentsIndexList = createStudentsIndexListFromFile(newFileName, &numOfStudents);
+    FILE* fp = fopen(database, "rb");
     checkFile(fp);
     int foundIndex = studentBinarySearchByIndexesInFile(fp, studentsIndexList, 0, numOfStudents, avgGrade);
     return createStudentNamesListByIndex(fp, avgGrade, foundIndex, studentsIndexList, numOfStudents, resSize);
 }
 
-char **
-createStudentNamesListByIndex(FILE *fp, int avg, int index, int studentsIndexList[], int numOfStudents, int *resSize) {
+char**
+createStudentNamesListByIndex(FILE* fp, int avg, int index, int studentsIndexList[], int numOfStudents, int* resSize) {
     int logSize = 0, phySize = 1;
     int studentsCounter = 0;
     bool isNotAvg = false;
-    char **studentsNames = (char **) malloc(sizeof(char *) * phySize);
+    char** studentsNames = (char**)malloc(sizeof(char*) * phySize);
     checkMemoryAllocation(studentsNames);
     int loopUpIndex = index, loopDownIndex = index;
     if (index == -1) {
         *resSize = 0;
         return NULL;
-    } else {
+    }
+    else {
         studentsCounter++;
-        STUDENT *tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[index]);
+        STUDENT* tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[index]);
         studentsNames[logSize] = tmpStudent->name;
         logSize++;
         loopUpIndex++;
@@ -38,7 +39,7 @@ createStudentNamesListByIndex(FILE *fp, int avg, int index, int studentsIndexLis
         while (loopUpIndex < numOfStudents && isNotAvg == false) {
             if (logSize == phySize) {
                 phySize *= 2;
-                studentsNames = (char **) realloc(studentsNames, sizeof(char *) * phySize);
+                studentsNames = (char**)realloc(studentsNames, sizeof(char*) * phySize);
                 checkMemoryAllocation(studentsNames);
             }
             tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[index]);
@@ -53,7 +54,7 @@ createStudentNamesListByIndex(FILE *fp, int avg, int index, int studentsIndexLis
         while (loopDownIndex > 0 && isNotAvg == false) {
             if (logSize == phySize) {
                 phySize *= 2;
-                studentsNames = (char **) realloc(studentsNames, sizeof(char *) * phySize);
+                studentsNames = (char**)realloc(studentsNames, sizeof(char*) * phySize);
                 checkMemoryAllocation(studentsNames);
             }
             tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[index]);
@@ -69,20 +70,20 @@ createStudentNamesListByIndex(FILE *fp, int avg, int index, int studentsIndexLis
     }
 }
 
-int *createStudentsIndexListFromFile(char *fname, int *numOfStudents) {
+int* createStudentsIndexListFromFile(char* fname, int* numOfStudents) {
     int logSize = 0, phySize = 1;
     int studentsIndexListCounter = 0;
-    int *studentsIndexList = (int *) malloc(sizeof(int) * phySize);
+    int* studentsIndexList = (int*)malloc(sizeof(int) * phySize);
     checkMemoryAllocation(studentsIndexList);
 
-    FILE *fp = fopen(fname, "rb");
+    FILE* fp = fopen(fname, "rb");
     checkFile(fp);
     fseek(fp, 0, SEEK_SET);
 
     while (1) {
         if (logSize == phySize) {
             phySize *= 2;
-            studentsIndexList = (int *) realloc(studentsIndexList, sizeof(int) * phySize);
+            studentsIndexList = (int*)realloc(studentsIndexList, sizeof(int) * phySize);
             checkMemoryAllocation(studentsIndexList);
         }
         int tmp;
@@ -100,11 +101,11 @@ int *createStudentsIndexListFromFile(char *fname, int *numOfStudents) {
     return studentsIndexList;
 }
 
-int studentBinarySearchByIndexesInFile(FILE *fp, int studentsIndexList[], int left, int right, int searchedAvg) {
+int studentBinarySearchByIndexesInFile(FILE* fp, int studentsIndexList[], int left, int right, int searchedAvg) {
     if (right >= left) {
         int mid = left + (right - left) / 2;
 
-        STUDENT *tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[mid]);
+        STUDENT* tmpStudent = createStudentFromStudentsFileByIndex(fp, studentsIndexList[mid]);
         if (tmpStudent->average == searchedAvg) {
             free(tmpStudent);
             return mid;
@@ -123,18 +124,19 @@ int studentBinarySearchByIndexesInFile(FILE *fp, int studentsIndexList[], int le
 }
 
 
-STUDENT *createStudentFromStudentsFileByIndex(FILE *fp, int index) {
+STUDENT* createStudentFromStudentsFileByIndex(FILE* fp, int index) {
     // why fseek(fp, 0, index); doesn't work ?
     fseek(fp, index, SEEK_SET);
 
-    STUDENT *currStudent = (STUDENT *) malloc(sizeof(STUDENT));
+    STUDENT* currStudent = (STUDENT*)malloc(sizeof(STUDENT));
     checkMemoryAllocation(currStudent);
     short int currNameSize;
     fread(&currNameSize, sizeof(short int), 1, fp);
 
-    char *currName = (char *) malloc(sizeof(char) * currNameSize);
+    char* currName = (char*)malloc((sizeof(char) * currNameSize) +1);
     checkMemoryAllocation(currName);
     fread(currName, sizeof(char) * currNameSize, 1, fp);
+    currName[currNameSize] = '\0';
 
     int currAvg;
     fread(&currAvg, sizeof(int), 1, fp);
@@ -144,7 +146,7 @@ STUDENT *createStudentFromStudentsFileByIndex(FILE *fp, int index) {
     return currStudent;
 }
 
-void freeAll(int studentsIndexList[], int numOfStudents, char **studentsNames, int size) {
+void freeAll(int studentsIndexList[], int numOfStudents, char** studentsNames, int size) {
     free(studentsIndexList);
     for (int i = 0; i < size; ++i) {
         free(studentsNames[i]);

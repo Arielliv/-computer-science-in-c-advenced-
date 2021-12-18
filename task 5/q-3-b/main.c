@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,11 +6,6 @@
 
 //// argv[1] - name of the file
 //// argv[2] - number for avgGrade
-//int main(int argc, char *argv[]) {
-//    int resSize;
-//    findAverageGrade(argv[1], atoi(argv[2]), &resSize);
-//    return 0;
-//}
 void printNames(char **records, int size);
 
 void main() {

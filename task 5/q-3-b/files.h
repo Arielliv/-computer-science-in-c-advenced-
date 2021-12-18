@@ -11,17 +11,17 @@
 #include <stdbool.h>
 #include "students.h"
 
-char **findAverageGrade(char *database, int avgGrade, int *resSize);
+char** findAverageGrade(char* database, int avgGrade, int* resSize);
 
-int *createStudentsIndexListFromFile(char *fname, int *numOfStudents);
+int* createStudentsIndexListFromFile(char* fname, int* numOfStudents);
 
-STUDENT *createStudentFromStudentsFileByIndex(FILE *fp, int index);
+STUDENT* createStudentFromStudentsFileByIndex(FILE* fp, int index);
 
-char **
-createStudentNamesListByIndex(FILE *fp, int avg, int index, int studentsIndexList[], int numOfStudents, int *resSize);
+char**
+createStudentNamesListByIndex(FILE* fp, int avg, int index, int studentsIndexList[], int numOfStudents, int* resSize);
 
-int studentBinarySearchByIndexesInFile(FILE *fp, int studentsIndexList[], int left, int right, int searchedAvg);
+int studentBinarySearchByIndexesInFile(FILE* fp, int studentsIndexList[], int left, int right, int searchedAvg);
 
-void freeAll(int studentsIndexList[], int numOfStudents, char **studentsNames, int size);
+void freeAll(int studentsIndexList[], int numOfStudents, char** studentsNames, int size);
 
 #endif //Q_3_B_FILES_H
