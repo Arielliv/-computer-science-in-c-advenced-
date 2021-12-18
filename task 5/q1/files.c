@@ -1,9 +1,11 @@
 //
 // Created by 315363366 on 10/12/2021.
 //
+#define _CRT_SECURE_NO_WARNINGS
 
 #include "files.h"
 #include "utils.h"
+
 
 void Exe5Q1(char *fname, unsigned int x) {
     FILE *fp = fopen(fname, "rb");
@@ -11,52 +13,38 @@ void Exe5Q1(char *fname, unsigned int x) {
     char **strArray = creatStrArrayFromFile(fp, x);
     fclose(fp);
     sortLexicographically(strArray, x);
-//    for (int i = 0; i < x; i++) {
-//        printf("str [%d] : %s\n", i, strArray[i]);
-//    }
-
     createTextFile(fname, strArray, x);
     freeAll(strArray, x);
 }
-
-//char **creatStrArrayFromFile(FILE *fp, int numOfItems) {
-//    char **newStrArray = (char **) malloc(sizeof(char *) * numOfItems);
-//    int sizeOfCurrentStr;
-//    fseek(fp, 0, SEEK_SET);
-//    for (int i = 0; i < numOfItems; i++) {
-//        fread(&sizeOfCurrentStr, sizeof(int), 1, fp);
-//        char *currentStr = (char *) malloc(sizeof(char) * sizeOfCurrentStr);
-//        fread(currentStr, sizeof(char) * sizeOfCurrentStr, 1, fp);
-//        newStrArray[i] = currentStr;
-//    }
-//    return newStrArray;
-//}
 
 char **creatStrArrayFromFile(FILE *fp, int numOfItems) {
     char **newStrArray = (char **) malloc(sizeof(char *) * numOfItems);
     checkMemoryAllocation(newStrArray);
     int sizeOfCurrentStr;
+    char *currentStr;
+    int currentCounter;
+
 
     fseek(fp, 0, SEEK_SET);
     for (int i = 0; i < numOfItems; i++) {
-        int currentCounter = 0;
+        currentCounter = 0;
         fread(&sizeOfCurrentStr, sizeof(int), 1, fp);
-        char *currentStr = (char *) malloc(sizeof(char) * sizeOfCurrentStr);
+        currentStr = (char *) malloc((sizeof(char) * sizeOfCurrentStr) + 1);
         checkMemoryAllocation(currentStr);
 
         for (int j = 0; j < sizeOfCurrentStr; j++) {
             char tmpChar;
             fread(&tmpChar, sizeof(char), 1, fp);
             if (tmpChar >= 'a' && tmpChar <= 'z') {
-                strncat(currentStr, &tmpChar, 1);
+                currentStr[currentCounter] = tmpChar;
                 currentCounter++;
             }
 
         }
-        currentStr += '\0';
+        currentStr[currentCounter] = '\0';
         currentStr = (char *) realloc(currentStr, currentCounter + 1);
         checkMemoryAllocation(currentStr);
-//        printf("str [%d] : %s\n", i, currentStr);
+        printf("str [%d] : %s\n", i, currentStr);
         newStrArray[i] = currentStr;
     }
 
