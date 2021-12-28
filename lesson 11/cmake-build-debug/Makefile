@@ -143,6 +143,33 @@ lesson_11/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lesson_11.dir/build.make CMakeFiles/lesson_11.dir/build
 .PHONY : lesson_11/fast
 
+array.o: array.c.o
+
+.PHONY : array.o
+
+# target to build an object file
+array.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lesson_11.dir/build.make CMakeFiles/lesson_11.dir/array.c.o
+.PHONY : array.c.o
+
+array.i: array.c.i
+
+.PHONY : array.i
+
+# target to preprocess a source file
+array.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lesson_11.dir/build.make CMakeFiles/lesson_11.dir/array.c.i
+.PHONY : array.c.i
+
+array.s: array.c.s
+
+.PHONY : array.s
+
+# target to generate assembly for a file
+array.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lesson_11.dir/build.make CMakeFiles/lesson_11.dir/array.c.s
+.PHONY : array.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -179,6 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lesson_11"
+	@echo "... array.o"
+	@echo "... array.i"
+	@echo "... array.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

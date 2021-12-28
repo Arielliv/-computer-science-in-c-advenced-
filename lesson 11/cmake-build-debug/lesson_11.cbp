@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 11/array.c">
+			<Option target="lesson_11"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 11/array.h">
+			<Option target="lesson_11"/>
+		</Unit>
 		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/lesson 11/main.c">
 			<Option target="lesson_11"/>
 		</Unit>

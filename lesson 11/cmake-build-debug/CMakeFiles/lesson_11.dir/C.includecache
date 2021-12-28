@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 11/array.c
+array.h
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 11/array.h
+
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 11/array.h
+stdio.h
+-
+stdlib.h
+-
+
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 11/main.c
+array.h
+/Users/ariell/Education/computer-science-in-c-advanced/lesson 11/array.h
+
