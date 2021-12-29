@@ -6,13 +6,10 @@ typedef unsigned char BYTE;
 
 int *filter(int *Numbers, int size, BYTE *pred, int *new_size);
 
-BYTE setBit(BYTE ch, int i);
-
 int countSetBits(BYTE *bitsArr, int size);
 
 bool isBitOn(BYTE byte, int location);
 
-//int *reverseArray(int *arr, int size);
 int countFormTwoPred(BYTE *pred1, BYTE *pred2, int size);
 
 int *xorFilter(int *Numbers, int size, BYTE *pred1, BYTE *pred2, int *new_size);
@@ -136,37 +133,22 @@ int *filter(int *Numbers, int size, BYTE *pred, int *new_size) {
     int *newNumbers = (int *) malloc(sizeof(int) * count);
 
     for (j = (size / 8) - 1; j >= 0; j--) {
-        for (i = size; i >= 0; i--) {
+        for (i = 7; i >= 0; i--) {
             bool checkPred1 = isBitOn(pred[j], i);
             if (checkPred1) {
-                newNumbers[counter] = Numbers[(j + 1) * (i)];
+                newNumbers[counter] = Numbers[(j + 1) * 8 - (8 - i)];
                 counter--;
             }
         }
-//        newNumbers = reverseArray(newNumbers, count);
     }
 
     *new_size = count;
     return newNumbers;
 }
 
-//int *reverseArray(int *arr, int size) {
-//    int i, y;
-//    int *reversedArray = (int *) malloc(sizeof(int) * size);
-//    for (y = 0, i = size - 1; i >= 0; y++, i--) {
-//        reversedArray[y] = arr[i];
-//    }
-//    return reversedArray;
-//}
-
 bool isBitOn(BYTE byte, int location) {
     BYTE mask = 1 << location;
     return byte & mask;
-}
-
-BYTE setBit(BYTE ch, int i) {
-    BYTE mask = 1 << i;
-    return ch | mask;
 }
 
 int countSetBits(BYTE *bitsArr, int size) {
@@ -214,12 +196,11 @@ int *xorFilter(int *Numbers, int size, BYTE *pred1, BYTE *pred2, int *new_size) 
             bool checkPred1 = isBitOn(pred1[j], i);
             bool checkPred2 = isBitOn(pred2[j], i);
             if ((checkPred1 || checkPred2) && !(checkPred1 && checkPred2)) {
-                newNumbers[counter] = Numbers[(j + 1) * (i)];
+                newNumbers[counter] = Numbers[(j + 1) * 8 - (8 - i)];
                 counter--;
             }
 
         }
-//        newNumbers = reverseArray(newNumbers, logSize);
     }
 
     *new_size = count;
