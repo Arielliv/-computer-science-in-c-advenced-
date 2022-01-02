@@ -75,11 +75,11 @@ void getShortPhone(unsigned char short_phone[5], char phone[12], int size) {
     strncpy(copyPhone, phone, 12);
     for (i = 0; i < size; i += 2) {
         res = 0x00;
-        res = (asciiToNumber(copyPhone[i]) | res);
+        res = (copyPhone[i] | res);
         if (i + 1 == 3) {
             i++;
         }
-        res = ((asciiToNumber(copyPhone[i + 1]) << 4) | res);
+        res = ((copyPhone[i + 1] << 4) | res);
         short_phone[counter] = res;
         counter++;
     }
@@ -93,29 +93,21 @@ void convertShortPhoneToRegular(char phone[12], unsigned char short_phone[5], in
     for (i = 0; i < size; i++) {
         res = 0x00;
 
-        phone[counter] = numberToAscii((short_phone[i] & mask));
+        phone[counter] = (short_phone[i] & mask);
         counter++;
         if (i == 1) {
             phone[counter] = '-';
             counter++;
-            phone[counter] = numberToAscii((short_phone[i] >> 4 | res));
+            phone[counter] =(short_phone[i] >> 4 | res);
             counter++;
         } else {
-            phone[counter] = numberToAscii((short_phone[i] >> 4 | res));
+            phone[counter] = (short_phone[i] >> 4 | res);
 
             counter++;
         }
 
     }
     phone[11] = '\0';
-}
-
-int asciiToNumber(char num) {
-    return num - '0';
-}
-
-char numberToAscii(int num) {
-    return (char) num + '0';
 }
 
 
