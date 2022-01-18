@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ariell/Education/computer-science-in-c-advanced/Task 6/q-4/main.c
+stdio.h
+-
+utils.h
+/Users/ariell/Education/computer-science-in-c-advanced/Task 6/q-4/utils.h
+string.h
+/Users/ariell/Education/computer-science-in-c-advanced/Task 6/q-4/string.h
+
+/Users/ariell/Education/computer-science-in-c-advanced/Task 6/q-4/utils.h
+stdlib.h
+-
+stdio.h
+-
+stdlib.h
+-
+

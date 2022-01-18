@@ -81,6 +81,12 @@
 		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/Task 6/q-4/main.c">
 			<Option target="q_4"/>
 		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/Task 6/q-4/utils.c">
+			<Option target="q_4"/>
+		</Unit>
+		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/Task 6/q-4/utils.h">
+			<Option target="q_4"/>
+		</Unit>
 		<Unit filename="/Users/ariell/Education/computer-science-in-c-advanced/Task 6/q-4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
